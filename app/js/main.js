@@ -48,7 +48,7 @@ btnClose.addEventListener('click', function() {
     header.classList.remove('header--active');
     headerItemPopup.forEach(element => {
         
-        element.style.display = "flex";
+        element.style.display = "block";
     });
 });
 
@@ -69,7 +69,7 @@ window.addEventListener('resize', function(event){
         header.classList.remove('header--active');
         headerItemPopup.forEach(element => {
             
-            element.style.display = "flex";
+            element.style.display = "block";
         });
     } else {
         headerAddress.classList.remove('header__address--active');
@@ -85,7 +85,7 @@ window.addEventListener('resize', function(event){
         header.classList.remove('header--active');
         headerItemPopup.forEach(element => {
             
-            element.style.display = "flex";
+            element.style.display = "block";
         });
     }
     
