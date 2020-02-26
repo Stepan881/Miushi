@@ -1,0 +1,43 @@
+/* ------------------------------------------ */
+/* GLOBAL
+/* ------------------------------------------ */
+
+html {
+  box-sizing: border-box;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+}
+
+.body {
+  background-color: $bg-color;
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+}
+
+.mobile-dispay-none {
+  display: none;
+}
