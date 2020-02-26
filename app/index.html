@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Miushi</title>
 </head>
@@ -55,12 +56,68 @@
     </header>
 
     <main class="main">
-
+        <h1 class="visually-hidden">Muishi Вкусная еда</h1>  
+        <section class="banner swiper-container">
+            <div class="banner__container swiper-wrapper">
+                <div class="banner__slide swiper-slide">
+                    <picture>
+                        <source media="(min-width: 1170px)" srcset="img/banner-desctop.png">
+                        <source media="(min-width: 750px)" srcset="img/banner-tablet.png">
+                        <img src="img/banner-mobile.png" alt="Roll" class="banner__image">
+                    </picture>
+                    <div class="banner__content">
+                        <h2 class="banner__head">Счастливые<br>часы</h2>
+                        <span class="banner__time">с 11:00 до 16:00 в будние дни</span>
+                        <span class="banner__sale">скидка<br>15%</span>
+                        <a href="#" class="banner__link">Подробнее</a>
+                    </div>
+                </div>                
+                <div class="banner__slide swiper-slide">
+                    <picture>
+                        <source media="(min-width: 1170px)" srcset="img/banner-desctop.png">
+                        <source media="(min-width: 750px)" srcset="img/banner-tablet.png">
+                        <img src="img/banner-mobile.png" alt="Roll" class="banner__image">
+                    </picture>
+                    <div class="banner__content">
+                        <h2 class="banner__head">Счастливые<br>часы</h2>
+                        <span class="banner__time">с 11:00 до 16:00 в будние дни</span>
+                        <span class="banner__sale">скидка<br>15%</span>
+                        <a href="#" class="banner__link">Подробнее</a>
+                    </div>
+                </div>             
+                <div class="banner__slide swiper-slide">
+                    <picture>
+                        <source media="(min-width: 1170px)" srcset="img/banner-desctop.png">
+                        <source media="(min-width: 750px)" srcset="img/banner-tablet.png">
+                        <img src="img/banner-mobile.png" alt="Roll" class="banner__image">
+                    </picture>
+                    <div class="banner__content">
+                        <h2 class="banner__head">Счастливые<br>часы</h2>
+                        <span class="banner__time">с 11:00 до 16:00 в будние дни</span>
+                        <span class="banner__sale">скидка<br>15%</span>
+                        <a href="#" class="banner__link">Подробнее</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="banner__bulets swiper-pagination">
+                <span class="banner__bulet"></span>
+                <span class="banner__bulet"></span>
+                <span class="banner__bulet"></span>
+            </div>
+            <a href="#" class="banner__prev">Назад
+                <img src="img/arrow.png" alt="Назад" class="banner__arrow">
+            </a>
+            <a href="#" class="banner__next">Вперед
+                <img src="img/arrow.png" alt="Вперед" class="banner__arrow">
+            </a>
+        </section>
     </main>
     <foter class="footer">
 
     </foter>
 
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

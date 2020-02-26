@@ -7,7 +7,7 @@ html {
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
-  overflow: hidden;
+  overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -23,7 +23,7 @@ html {
 
 .body {
   background-color: $bg-color;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .visually-hidden {
