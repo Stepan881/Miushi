@@ -47,3 +47,8 @@ html {
     display: none;
   }
 }
+@media (min-width: $tablet-width) {
+  .mobile {
+    display: none;
+  }
+}

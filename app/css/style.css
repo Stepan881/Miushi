@@ -306,45 +306,45 @@ template {
 
 @font-face {
   font-family: "LemonTuesday";
-  src: url("../../fonts/LemonTuesday.eot");
+  src: url("../fonts/LemonTuesday.eot");
   /* IE9 Compat Modes */
-  src: url("../../fonts/LemonTuesday.eot?#iefix") format("embedded-opentype"), url("../../fonts/LemonTuesday.ttf") format("truetype"), url("../../fonts/LemonTuesday.woff") format("woff"), url("../../fonts/LemonTuesday.woff2") format("woff2");
+  src: url("../fonts/LemonTuesday.eot?#iefix") format("embedded-opentype"), url("../fonts/LemonTuesday.ttf") format("truetype"), url("../fonts/LemonTuesday.woff") format("woff"), url("../fonts/LemonTuesday.woff2") format("woff2");
   /* Modern Browsers */
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "OpenSans";
-  src: url("../../fonts/OpenSans.eot");
+  src: url("../fonts/OpenSans.eot");
   /* IE9 Compat Modes */
-  src: url("../../fonts/OpenSans.eot?#iefix") format("embedded-opentype"), url("../../fonts/OpenSans.ttf") format("truetype"), url("../../fonts/OpenSans.woff") format("woff"), url("../../fonts/OpenSans.woff2") format("woff2");
+  src: url("../fonts/OpenSans.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans.ttf") format("truetype"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.woff2") format("woff2");
   /* Modern Browsers */
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "OpenSans-Semibold";
-  src: url("../../fonts/OpenSansSemibold.eot");
+  src: url("../fonts/OpenSansSemibold.eot");
   /* IE9 Compat Modes */
-  src: url("../../fonts/OpenSansSemibold.eot?#iefix") format("embedded-opentype"), url("../../fonts/OpenSansSemibold.ttf") format("truetype"), url("../../fonts/OpenSansSemibold.woff") format("woff"), url("../../fonts/OpenSansSemibold.woff2") format("woff2");
+  src: url("../fonts/OpenSansSemibold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansSemibold.ttf") format("truetype"), url("../fonts/OpenSansSemibold.woff") format("woff"), url("../fonts/OpenSansSemibold.woff2") format("woff2");
   /* Modern Browsers */
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "RobotoSlab-Bold";
-  src: url("../../fonts/RobotoSlab.eot");
+  src: url("../fonts/RobotoSlab.eot");
   /* IE9 Compat Modes */
-  src: url("../../fonts/RobotoSlab.eot?#iefix") format("embedded-opentype"), url("../../fonts/RobotoSlab.ttf") format("truetype"), url("../../fonts/RobotoSlab.woff") format("woff"), url("../../fonts/RobotoSlab.woff2") format("woff2");
+  src: url("../fonts/RobotoSlab.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab.ttf") format("truetype"), url("../fonts/RobotoSlab.woff") format("woff"), url("../fonts/RobotoSlab.woff2") format("woff2");
   /* Modern Browsers */
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "MyriadPro-Regular";
-  src: url("../../fonts/MyriadPro.eot");
+  src: url("../fonts/MyriadPro.eot");
   /* IE9 Compat Modes */
-  src: url("../../fonts/MyriadPro.eot?#iefix") format("embedded-opentype"), url("../../fonts/MyriadPro.ttf") format("truetype"), url("../../fonts/MyriadPro.woff") format("woff"), url("../../fonts/MyriadPro.woff2") format("woff2");
+  src: url("../fonts/MyriadPro.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro.ttf") format("truetype"), url("../fonts/MyriadPro.woff") format("woff"), url("../fonts/MyriadPro.woff2") format("woff2");
   /* Modern Browsers */
   font-weight: normal;
   font-style: normal; }
@@ -387,6 +387,10 @@ html {
 
 .no-bedire::before {
   display: none; }
+
+@media (min-width: 750px) {
+  .mobile {
+    display: none; } }
 
 .header {
   font-size: 14px;
@@ -1659,14 +1663,19 @@ html {
   margin: 0 auto;
   width: 90%;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 17px; }
+  .reviews__wrapper .reviews__review:nth-child(n+3) {
+    display: none; }
 
 .reviews__review {
   width: 100%;
+  min-height: 480px;
   border: 1px solid #e6e6e6;
   display: flex;
   flex-direction: column;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 40px; }
 
 .reviews__profil {
   display: flex;
@@ -1681,4 +1690,224 @@ html {
 
 .reviews__data {
   width: 63%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px; }
+
+.reviews__name {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.4px;
+  color: #5e81a7;
+  margin: 0; }
+
+.reviews__time {
+  align-items: center;
+  font-family: "OpenSans-Semibold", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+.reviews__content {
+  width: 95%;
+  margin: 0 auto;
+  flex: 1; }
+
+.reviews__content-p {
+  width: 100%;
+  margin: 25px 0; }
+
+.reviews__content-image {
+  width: 106px;
+  -o-object-fit: contain;
+     object-fit: contain; }
+
+.reviews__social {
+  min-height: 98px;
+  margin: 0 5.5%;
+  display: flex;
+  flex-direction: column;
+  width: 260px; }
+
+.reviews__social-share {
+  display: flex;
+  min-height: 88px;
+  flex-direction: column;
+  background: url(../../img/social.png) center no-repeat;
+  background-size: cover;
+  margin-bottom: 17px; }
+
+@media (min-width: 750px) {
+  .reviews__header {
+    margin: 0px auto 52px;
+    font-size: 48px; }
+    .reviews__header::after {
+      width: 100px;
+      height: 38px;
+      left: -43px;
+      top: 2px; }
+    .reviews__header::before {
+      width: 100px;
+      height: 38px;
+      right: -67px;
+      top: 2px; }
+  .reviews__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 97%;
+    margin: 0 auto 45px; }
+  .reviews__review {
+    min-height: 520px;
+    width: 48%; }
+  .reviews__image {
+    margin: 42px 0 0 43px; }
+  .reviews__data {
+    width: 55%;
+    margin: 53px 0px 0px 22px; }
+  .reviews__content {
+    margin-left: 43px;
+    width: 80%; }
+  .reviews__social {
+    min-height: 121px;
+    margin: 0px 13.5%;
+    width: 274px; } }
+
+@media (min-width: 1170px) {
+  .reviews__header {
+    font-size: 60px;
+    margin: 60px auto; }
+    .reviews__header::after {
+      width: 110px;
+      height: 42px;
+      left: -79px; }
+    .reviews__header::before {
+      width: 110px;
+      height: 42px;
+      right: -80px; }
+  .reviews__wrapper {
+    max-width: 1150px;
+    margin: 0 auto 71px; }
+    .reviews__wrapper .reviews__review:nth-child(n+3) {
+      display: flex; }
+  .reviews__review {
+    width: 360px; } }
+
+.reply {
+  background: url(../img/reply-mobile.png) -400px -82px no-repeat;
+  height: 520px; }
+  .reply__container {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    color: #fff; }
+  .reply__text {
+    padding: 51px 0 0 6%;
+    display: block; }
+  .reply__header {
+    font-family: "LemonTuesday", "Arial", sans-serif;
+    font-size: 44px;
+    line-height: 50px;
+    font-weight: 100;
+    text-align: left;
+    margin: 18px 0 0 0;
+    padding: 0 0 24px 5%;
+    width: 90%; }
+  .reply__fieldset {
+    border: none;
+    padding: .35em 0.75em 1.325em; }
+  .reply__p {
+    margin: 0 0 22px; }
+  .reply__input {
+    background-color: inherit;
+    border: none;
+    height: 37px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px; }
+    .reply__input:hover, .reply__input:focus {
+      background-color: rgba(255, 255, 255, 0.3); }
+  .reply__btn {
+    font-family: "OpenSans-Semibold", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fd4f10;
+    height: 48px;
+    display: block;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer; }
+  .reply__info {
+    margin: 20px 6%;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400; }
+
+@media (min-width: 750px) {
+  .reply {
+    background-position: -224px -152px;
+    height: 356px; }
+    .reply__text {
+      padding: 70px 0 0 3%;
+      font-size: 16px;
+      line-height: 30px; }
+    .reply__header {
+      font-size: 54px;
+      line-height: 30px;
+      margin: 14px 0 0;
+      padding: 0 0 40px 3%; }
+    .reply__form {
+      display: flex;
+      flex-direction: row;
+      margin: 0 1%; }
+    .reply__fieldset {
+      width: 66%;
+      display: inline-block;
+      padding-bottom: 0; }
+      .reply__fieldset div:nth-child(n+2) {
+        margin-left: 15px; }
+    .reply__p {
+      display: block;
+      width: 48%;
+      display: inline-block; }
+    .reply____input, .reply__btn {
+      width: 30%; }
+    .reply__info {
+      margin: 12px 3%; } }
+
+@media (min-width: 1170px) {
+  .reply {
+    background: url(../img/reply-desctop.png) center no-repeat;
+    height: 357px; }
+    .reply__container {
+      width: 780px;
+      margin: 0 auto;
+      padding-left: 18%;
+      position: relative; }
+      .reply__container::before {
+        content: '';
+        position: absolute;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        top: 0; }
+      .reply__container::after {
+        content: '';
+        position: absolute;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        right: -100%;
+        top: 0; } }

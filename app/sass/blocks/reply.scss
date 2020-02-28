@@ -1,0 +1,166 @@
+.reply {
+    background: url(../img/reply-mobile.png) -400px -82px no-repeat;
+    height: 520px;
+
+    &__container {
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        height: 100%;
+        color: $reply-color;
+    }
+
+    &__text {
+        padding: 51px 0 0 6%;
+        display: block;
+    }
+
+    &__header {
+        font-family: "LemonTuesday", "Arial", sans-serif;
+        font-size: 44px;
+        line-height: 50px;
+        font-weight: 100;
+        text-align: left;
+        margin: 18px 0 0 0;
+        padding: 0 0 24px 5%;
+        width: 90%;
+    }
+
+    &__fieldset {
+        border: none;
+        padding: .35em 0.75em 1.325em;
+    }
+
+    &__p {
+        margin: 0 0 22px;
+    }
+
+    &__input {
+        background-color: inherit;
+        border: none;
+        height: 37px;
+        border-bottom: 1px solid $reply-color;
+        color: $reply-color;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 15px; 
+
+        &:hover,
+        &:focus {
+            background-color: $reply-input-bg-hover;
+        }
+    }
+
+    &__btn {
+        font-family: "OpenSans-Semibold", "Arial", sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600;
+        border: none;
+        width: 90%;
+        margin: 0 auto;
+        background-color: $banner-btn;
+        height: 48px;
+        display: block;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        color: $reply-btn-text;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &__info{
+        margin: 20px 6%;
+        font-family: "OpenSans", "Arial", sans-serif;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .reply {
+        background-position: -224px -152px;
+
+       height: 356px;
+        &__text {
+            padding: 70px 0 0 3%;
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        &__header {
+            font-size: 54px;
+            line-height: 30px;
+            margin: 14px 0 0;
+            padding: 0 0 40px 3%;
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: row;
+            margin: 0 1%;
+        }
+
+        &__fieldset {
+            width: 66%;
+            display: inline-block;
+            padding-bottom: 0;
+
+            div:nth-child(n+2) {
+                margin-left: 15px;
+            }
+        }
+
+        &__p {
+            display: block;
+            width: 48%;
+            display: inline-block;
+        }
+
+        &____input,
+        &__btn {
+            width: 30%;
+        }
+
+        &__info {
+            margin: 12px 3%;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .reply {
+        background: url(../img/reply-desctop.png) center no-repeat;
+        height: 357px;
+
+        &__container {
+            width: 780px;
+            margin: 0 auto;
+            padding-left: 18%;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                background-color: rgba($color: #000000, $alpha: 0.5);
+                width: 100%;
+                height: 100%;
+                left: -100%;
+                top: 0;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                background-color: rgba($color: #000000, $alpha: 0.5);
+                width: 100%;
+                height: 100%;
+                right: -100%;
+                top: 0;
+            }
+        }
+
+        
+    }
+}
