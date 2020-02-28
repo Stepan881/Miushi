@@ -1,0 +1,213 @@
+"use strict";
+
+const btnOpen = document.querySelector('.header__btn-open');
+const btnClose = document.querySelector('.header__btn-close');
+
+const header = document.querySelector('.header');
+const headerAddress = document.querySelector('.header__address');
+const headerMail = document.querySelector('.header__mail');
+const headerContact = document.querySelector('.header__contact');
+const headerCall = document.querySelector('.header__call');
+const headerList = document.querySelector('.header__list');
+const headerImage = document.querySelector('.header__image');
+const headerTop = document.querySelector('.header__top');
+const headerBottom = document.querySelector('.header__bottom');
+const headerItemPopup = document.querySelectorAll('.header__item--popup');
+
+
+function add() {
+  headerAddress.classList.add('header__address--active');
+  headerMail.classList.add('header__mail--active');
+  headerContact.classList.add('header__contact--active');
+  headerCall.classList.add('header__call--active');
+  headerList.classList.add('header__list--active');
+  btnClose.classList.add('header__btn-close--active');
+  btnOpen.classList.add('header__btn-open--active');
+  headerImage.classList.add('header__image--active');
+  headerTop.classList.add('header__top--active');
+  headerBottom.classList.add('header__bottom--active');
+  header.classList.add('header--active');
+
+  headerItemPopup.forEach(element => {
+      element.style.display = "none";
+  });
+}
+
+function remove() {
+  headerAddress.classList.remove('header__address--active');
+  headerMail.classList.remove('header__mail--active');
+  headerContact.classList.remove('header__contact--active');
+  headerCall.classList.remove('header__call--active');
+  headerList.classList.remove('header__list--active');
+  btnClose.classList.remove('header__btn-close--active');
+  btnOpen.classList.remove('header__btn-open--active');
+  headerImage.classList.remove('header__image--active');
+  headerTop.classList.remove('header__top--active');
+  headerBottom.classList.remove('header__bottom--active');
+  header.classList.remove('header--active');
+  headerItemPopup.forEach(element => {
+      
+      element.style.display = "block";
+  });
+}
+
+btnOpen.addEventListener('click', add);
+
+btnClose.addEventListener('click', remove);
+
+
+window.addEventListener('resize', function(event){
+  let width = document.documentElement.clientWidth;
+    remove();
+});
+
+
+let swiperHeader = new Swiper('.banner', {
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.banner__bulets',
+    bulletClass: 'banner__bulet',
+    bulletActiveClass: 'banner__bulet--active',
+    clickable: true,
+    type: 'bullets',   
+  },
+  navigation: {
+    nextEl: '.banner__next',
+    prevEl: '.banner__prev',
+  },
+});
+
+const setsSwiper = document.querySelector('.sets > .sets__continer');
+let swiperSets = new Swiper(setsSwiper, {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 4000,
+  },
+  pagination: {
+    el: '.pagination__bulets',
+    bulletClass: 'pagination__bulet',
+    bulletActiveClass: 'pagination__bulet--active',
+    clickable: true,
+    type: 'bullets',   
+  },
+  breakpoints: {
+    750: {
+      slidesPerView: 3,
+      loopedSlides: 3,
+    },
+    1170: {
+      slidesPerView: 4,
+      centeredSlides: false,
+    },
+    debugger: false
+  },
+  navigation: {
+    nextEl: '.pagination__next',
+    prevEl: '.pagination__prew',
+  },
+});
+
+const RollSwiper = document.querySelector('.rolls > .rolls__continer');
+let swiperRoll = new Swiper(RollSwiper, {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  pagination: {
+    el: '.pagination__bulets',
+    bulletClass: 'pagination__bulet',
+    bulletActiveClass: 'pagination__bulet--active',
+    clickable: true,
+    type: 'bullets',   
+  },
+  breakpoints: {
+    750: {
+      slidesPerView: 3,
+      loopedSlides: 3,
+    },
+    1170: {
+      slidesPerView: 4,
+      centeredSlides: false,
+    },
+    debugger: false
+  },
+  navigation: {
+    nextEl: '.pagination__next',
+    prevEl: '.pagination__prew',
+  },
+});
+
+const pizzaSwiper = document.querySelector('.pizza > .pizza__continer');
+let swiperpizza = new Swiper(pizzaSwiper, {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+  },
+  pagination: {
+    el: '.pagination__bulets',
+    bulletClass: 'pagination__bulet',
+    bulletActiveClass: 'pagination__bulet--active',
+    clickable: true,
+    type: 'bullets',   
+  },
+  breakpoints: {
+    750: {
+      slidesPerView: 3,
+      loopedSlides: 3,
+    },
+    1170: {
+      slidesPerView: 4,
+      centeredSlides: false,
+    },
+    debugger: false
+  },
+  navigation: {
+    nextEl: '.pagination__next',
+    prevEl: '.pagination__prew',
+  },
+});
+
+const pizzawok = document.querySelector('.wok > .wok__continer');
+let swiperwok = new Swiper(pizzawok, {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  pagination: {
+    el: '.pagination__bulets',
+    bulletClass: 'pagination__bulet',
+    bulletActiveClass: 'pagination__bulet--active',
+    clickable: true,
+    type: 'bullets',   
+  },
+  breakpoints: {
+    750: {
+      slidesPerView: 3,
+      loopedSlides: 3,
+    },
+    1170: {
+      slidesPerView: 4,
+      centeredSlides: false,
+    },
+    debugger: false
+  },
+  navigation: {
+    nextEl: '.pagination__next',
+    prevEl: '.pagination__prew',
+  },
+});

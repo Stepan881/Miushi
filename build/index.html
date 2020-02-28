@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Miushi</title>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header__top">
+            <div class="header__image">
+                <a href="index.html" class="header__image-link">
+                    <picture>
+                        <source media="(min-width: 750px)" srcset="./img/Miushi-logo-tablet.png">
+                        <img src="./img/Miushi-logo-mobile.png" alt="Магазин Muishi" class="header__img">
+                    </picture>
+                </a>
+            </div>
+            <address class="header__address">г. Курск, ул. Ленина, д. 3
+                <img src="./img/maps-and-flags.png" alt="Адрес" class="header__address-icon">
+            </address>
+            <a class="header__mail" href="mailto:Muishi@Muishi.ru">78003332222@yandex.ru
+                <img src="./img/envelope.png" alt="78003332222@yandex.ru" class="header__mail-ico">
+            </a>
+            <div class="header__contact">
+                <a class="header__tel" href="tel:+7 (800) 333 2 222">+7 (800) 333 2 222</a>
+                <span class="header__schedule">Работаем с 11.00 до 23.00</span> 
+            </div>
+            <a href="#" class="header__call">Обратный звонок</a>
+        </div>
+        <button class="header__btn-open" type="button">Открыть меню</button>
+        <div class="header__bottom">
+            <button class="header__btn-close " type="button">Закрыть меню</button>
+             <nav class="header__nav">
+                 <ul class="header__list">
+                    <li class="header__item"><a href="#" class="header__link">Меню</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Акции и скидки</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Доставка и оплата</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Новости</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
+                    <li class="header__item header__item--popup">
+                        <a href="#" class="header__link">Кабинет
+                            <img src="./img/user.png" alt="Кабинет" class="header__link-user">
+                        </a>
+                    </li>
+                    <li class="header__item header__item--popup">
+                        <a href="#" class="header__link">Корзина
+                            <img src="./img/online-shopping-cart.png" alt="Корзина" class="header__link-cart">
+                        </a>
+                    </li>
+                 </ul>
+             </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <h1 class="visually-hidden">Muishi Вкусная еда</h1>  
+        <section class="banner swiper-container">
+            <div class="banner__container swiper-wrapper">
+                <div class="banner__slide swiper-slide">
+                    <picture>
+                        <source media="(min-width: 1170px)" srcset="./img/banner-desctop.png">
+                        <source media="(min-width: 750px)" srcset="./img/banner-tablet.png">
+                        <img src="./img/banner-mobile.png" alt="Roll" class="banner__image">
+                    </picture>
+                    <div class="banner__content">
+                        <h2 class="banner__head">Счастливые<br>часы</h2>
+                        <span class="banner__time">с 11:00 до 16:00 в будние дни</span>
+                        <span class="banner__sale">скидка<br>15%</span>
+                        <a href="#" class="banner__link">Подробнее</a>
+                    </div>
+                </div>                
+                <div class="banner__slide swiper-slide">
+                    <picture>
+                        <source media="(min-width: 1170px)" srcset="./img/banner-desctop.png">
+                        <source media="(min-width: 750px)" srcset="./img/banner-tablet.png">
+                        <img src="./img/banner-mobile.png" alt="Roll" class="banner__image">
+                    </picture>
+                    <div class="banner__content">
+                        <h2 class="banner__head">Счастливые<br>часы</h2>
+                        <span class="banner__time">с 11:00 до 16:00 в будние дни</span>
+                        <span class="banner__sale">скидка<br>15%</span>
+                        <a href="#" class="banner__link">Подробнее</a>
+                    </div>
+                </div>             
+                <div class="banner__slide swiper-slide">
+                    <picture>
+                        <source media="(min-width: 1170px)" srcset="./img/banner-desctop.png">
+                        <source media="(min-width: 750px)" srcset="./img/banner-tablet.png">
+                        <img src="./img/banner-mobile.png" alt="Roll" class="banner__image">
+                    </picture>
+                    <div class="banner__content">
+                        <h2 class="banner__head">Счастливые<br>часы</h2>
+                        <span class="banner__time">с 11:00 до 16:00 в будние дни</span>
+                        <span class="banner__sale">скидка<br>15%</span>
+                        <a href="#" class="banner__link">Подробнее</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="banner__bulets swiper-pagination">
+                <span class="banner__bulet"></span>
+                <span class="banner__bulet"></span>
+                <span class="banner__bulet"></span>
+            </div>
+            <a href="#" class="banner__prev">Назад
+                <img src="./img/arrow.png" alt="Назад" class="banner__arrow">
+            </a>
+            <a href="#" class="banner__next">Вперед
+                <img src="./img/arrow.png" alt="Вперед" class="banner__arrow">
+            </a>
+        </section>
+        <section class="sets">
+            <h2 class="sets__header">Сеты</h2>
+            <div class="sets__continer">
+                <div class="sets__wrapper swiper-wrapper">
+                    <article class="sets__article article  swiper-slide">  
+                        <img src="./img/set1.png" alt="Сет №10" class="article__img">
+                        <span class="article__hit"></span>
+                        <h3 class="article__logo">Сет №10</h3>
+                        <div class="article__info">
+                            <span class="article__count">72 шт.</span>
+                            <span class="article__weight">1560 г.</span>
+                            <span class="article__kkal">1700 kkal</span>
+                        </div>
+                        <div class="article__wrapper">
+                            <span class="article__price">2 050 <sup class="article__sup">руб</sup></span>
+                            <span class="article__count-car">
+                                <span class="article__btn article__minus"></span>
+                                1
+                                <span class="article__btn article__plus"></span>
+                            </span>
+                        </div>
+                        <a href="#" class="article__button">В корзину</a>
+                    </article>
+                    <article class="sets__article article  swiper-slide">
+                        <img src="./img/set2.png" alt="Минисет №5" class="article__img">
+                        <h3 class="article__logo">Минисет №5</h3>
+                        <div class="article__info">
+                            <span class="article__count">14 шт.</span>
+                            <span class="article__weight">450 г.</span>
+                            <span class="article__kkal">400 kkal</span>
+                        </div>
+                        <div class="article__wrapper">
+                            <span class="article__price">510 <sup class="article__sup">руб</sup></span>
+                            <span class="article__count-car">
+                                <span class="article__btn article__minus"></span>
+                                1
+                                <span class="article__btn article__plus"></span>
+                            </span>
+                        </div>
+                        <a href="#" class="article__button">В корзину</a>
+                    </article>
+                    <article class="sets__article article  swiper-slide">
+                        <img src="./img/set3.png" alt="Сет №6" class="article__img">
+                        <h3 class="article__logo">Сет №6</h3>
+                        <div class="article__info">
+                            <span class="article__count">16 шт.</span>
+                            <span class="article__weight">460 г.</span>
+                            <span class="article__kkal">490 kkal</span>
+                        </div>
+                        <div class="article__wrapper">
+                            <span class="article__price">400 <sup class="article__sup">руб</sup></span>
+                            <span class="article__count-car">
+                                <span class="article__btn article__minus"></span>
+                                1
+                                <span class="article__btn article__plus"></span>
+                            </span>
+                        </div>
+                        <a href="#" class="article__button">В корзину</a>
+                    </article>
+                    <article class="sets__article article  swiper-slide">
+                        <img src="./img/set4.png" alt="Сет №8" class="article__img">
+                        <span class="article__veg"></span>
+                        <h3 class="article__logo">Сет №8</h3>
+                        <div class="article__info">
+                            <span class="article__count">24 шт.</span>
+                            <span class="article__weight">960 г.</span>
+                            <span class="article__kkal">800 kkal</span>
+                        </div>
+                        <div class="article__wrapper">
+                            <span class="article__price">1 550 <sup class="article__sup">руб</sup></span>
+                            <span class="article__count-car">
+                                <span class="article__btn article__minus"></span>
+                                1
+                                <span class="article__btn article__plus"></span>
+                            </span>
+                        </div>
+                        <a href="#" class="article__button">В корзину</a>
+                    </article>
+                    <article class="sets__article article  swiper-slide">
+                        <img src="./img/set5.png" alt="Сет №8" class="article__img">
+                        <h3 class="article__logo">Сет №8</h3>
+                        <div class="article__info">
+                            <span class="article__count">24 шт.</span>
+                            <span class="article__weight">960 г.</span>
+                            <span class="article__kkal">800 kkal</span>
+                        </div>
+                        <div class="article__wrapper">
+                            <span class="article__price">1 550 <sup class="article__sup">руб</sup></span>
+                            <span class="article__count-car">
+                                <span class="article__btn article__minus"></span>
+                                1
+                                <span class="article__btn article__plus"></span>
+                            </span>
+                        </div>
+                        <a href="#" class="article__button">В корзину</a>
+                    </article>
+                </div>
+                <div class="sets__pagination pagination">
+                    <div class="pagination__prew"></div>
+                    <div class="pagination__bulets">
+                        <span class="pagination__bulet"></span>
+                        <span class="pagination__bulet pagination__bulet--active"></span>
+                    </div>
+                    <div class="pagination__next"></div>
+                </div>  
+            </div>
+        </section>
+        <section class="rolls">
+            <h2 class="rolls__header">Роллы</h2>
+            <div class="rolls__continer">        
+                <div class="rolls__wrapper swiper-wrapper">
+                    <article class="rolls__article article  swiper-slide">
+                        <img src="./img/roll1.png" alt="Кунсей батакон" class="article__img">
+                        <h3 class="article__logo">Кунсей батакон</h3>
+                        <div class="article__info">
+                            <span class="article__count">8 шт.</span>
+                            <span class="article__weight">250 г.</span>
+                            <span class="article__kkal">350 kkal</span>
+                        </div>
+                        <div class="article__wrapper">
+                            <span class="article__price">260 <sup class="article__sup">руб</sup></span>
+                            <span class="article__count-car">
+                                <span class="article__btn article__minus"></span>
+                                1
+                                <span class="article__btn article__plus"></span>
+                            </span>
+                        </div>
+                        <a href="#" class="article__button">В корзину</a>
+                    </article>
+                    <article class="rolls__article article  swiper-slide">
+                        <img src="./img/roll2.png" alt="Унаги диру" class="article__img">
+                        <span class="article__fire"></span>
+                        <h3 class="article__logo">Унаги диру</h3>
+                        <div class="article__info">
+                            <span class="article__count">7 шт.</span>
+                            <span class="article__weight">960 г.</span>
+                            <span class="article__kkal">800 kkal</span>
+                        </div>
+                        <div class="article__wrapper">
+                            <span class="article__price">280 <sup class="article__sup">руб</sup></span>
+                            <span class="article__count-car">
+                                <span class="article__btn article__minus"></span>
+                                1
+                                <span class="article__btn article__plus"></span>
+                            </span>
+                        </div>
+                        <a href="#" class="article__button">В корзину</a>
+                    </article>
+                    <article class="rolls__article article  swiper-slide">
+                        <img src="./img/roll3.png" alt="Филадельфия" class="article__img">
+                        <h3 class="article__logo">Филадельфия</h3>
+                        <div class="article__info">
+                            <span class="article__count">8 шт.</span>
+                            <span class="article__weight">450 г.</span>
+                            <span class="article__kkal">400 kkal</span>
+                        </div>
+                        <div class="article__wrapper">
+                            <span class="article__price">280 <sup class="article__sup">руб</sup></span>
+                            <span class="article__count-car">
+                                <span class="article__btn article__minus"></span>
+                                1
+                                <span class="article__btn article__plus"></span>
+                            </span>
+                        </div>
+                        <a href="#" class="article__button">В корзину</a>
+                    </article>
+                    <article class="rolls__article article  swiper-slide">
+                        <img src="./img/roll4.png" alt="Мексиканский " class="article__img">
+                        <h3 class="article__logo">Мексиканский </h3>
+                        <div class="article__info">
+                            <span class="article__count">8 шт.</span>
+                            <span class="article__weight">460 г.</span>
+                            <span class="article__kkal">490 kkal</span>
+                        </div>
+                        <div class="article__wrapper">
+                            <span class="article__price">290 <sup class="article__sup">руб</sup></span>
+                            <span class="article__count-car">
+                                <span class="article__btn article__minus"></span>
+                                1
+                                <span class="article__btn article__plus"></span>
+                            </span>
+                        </div>
+                        <a href="#" class="article__button">В корзину</a>
+                    </article>
+                </div>
+                <div class="rolls__pagination pagination">
+                    <div class="pagination__prew"></div>
+                    <div class="pagination__bulets">
+                        <span class="pagination__bulet"></span>
+                        <span class="pagination__bulet pagination__bulet--active"></span>
+                    </div>
+                    <div class="pagination__next"></div>
+                </div>  
+            </div>
+        </section>
+        <section class="pizza">
+            <h2 class="pizza__header">Пицца</h2>
+            <div class="pizza__continer">        
+                <div class="pizza__wrapper swiper-wrapper">
+                    <article class="pizza__article article  swiper-slide">
+                        <img src="./img/pizza1.png" alt="Баварская" class="article__img">
+                        <h3 class="article__logo">Баварская</h3>
+                        <div class="article__info">
+                            <span class="article__count">33 см.</span>
+                            <span class="article__weight">680 г.</span>
+                            <span class="article__kkal">1350 kkal</span>
+                        </div>
+                        <div class="article__wrapper">
+                            <span class="article__price">480 <sup class="article__sup">руб</sup></span>
+                            <span class="article__count-car">
+                                <span class="article__btn article__minus"></span>
+                                1
+                                <span class="article__btn article__plus"></span>
+                            </span>
+                        </div>
+                        <a href="#" class="article__button">В корзину</a>
+                    </article>
+                    <article class="pizza__article article  swiper-slide">
+                        <img src="./img/pizza2.png" alt="Баварская" class="article__img">
+                        <span class="article__fire"></span>
+                        <h3 class="article__logo">Баварская</h3>
+                        <div class="article__info">
+                            <span class="article__count">33 см.</span>
+                            <span class="article__weight">755 г.</span>
+                            <span class="article__kkal">1800 kkal</span>
+                        </div>
+                        <div class="article__wrapper">
+                            <span class="article__price">380 <sup class="article__sup">руб</sup></span>
+                            <span class="article__count-car">
+                                <span class="article__btn article__minus"></span>
+                                1
+                                <span class="article__btn article__plus"></span>
+                            </span>
+                        </div>
+                        <a href="#" class="article__button">В корзину</a>
+                    </article>
+                    <article class="pizza__article article  swiper-slide">
+                        <img src="./img/pizza3.png" alt="Пепперони" class="article__img">
+                        <h3 class="article__logo">Пепперони</h3>
+                        <div class="article__info">
+                            <span class="article__count">33 см.</span>
+                            <span class="article__weight">615 г.</span>
+                            <span class="article__kkal">1400 kkal</span>
+                        </div>
+                        <div class="article__wrapper">
+                            <span class="article__price">450 <sup class="article__sup">руб</sup></span>
+                            <span class="article__count-car">
+                                <span class="article__btn article__minus"></span>
+                                1
+                                <span class="article__btn article__plus"></span>
+                            </span>
+                        </div>
+                        <a href="#" class="article__button">В корзину</a>
+                    </article>
+                    <article class="pizza__article article  swiper-slide">
+                        <img src="./img/pizza4.png" alt="Классическая" class="article__img">
+                        <h3 class="article__logo">Классическая</h3>
+                        <div class="article__info">
+                            <span class="article__count">33 см.</span>
+                            <span class="article__weight">590 г.</span>
+                            <span class="article__kkal">1490 kkal</span>
+                        </div>
+                        <div class="article__wrapper">
+                            <span class="article__price">390 <sup class="article__sup">руб</sup></span>
+                            <span class="article__count-car">
+                                <span class="article__btn article__minus"></span>
+                                1
+                                <span class="article__btn article__plus"></span>
+                            </span>
+                        </div>
+                        <a href="#" class="article__button">В корзину</a>
+                    </article>
+                </div>
+                <div class="pizza__pagination pagination">
+                    <div class="pagination__prew"></div>
+                    <div class="pagination__bulets">
+                        <span class="pagination__bulet"></span>
+                        <span class="pagination__bulet pagination__bulet--active"></span>
+                    </div>
+                    <div class="pagination__next"></div>
+                </div>  
+            </div>
+        </section>
+        <section class="wok">
+            <h2 class="wok__header">WOK</h2>
+            <div class="wok__continer">        
+                <div class="wok__wrapper swiper-wrapper">
+                    <article class="wok__article article  swiper-slide">
+                        <img src="./img/wok1.png" alt="С говядиной" class="article__img">
+                        <h3 class="article__logo">С говядиной</h3>
+                        <div class="article__info">
+                            <span class="article__weight no-bedire">400 г.</span>
+                            <span class="article__kkal">1350 kkal</span>
+                        </div>
+                        <div class="article__add">
+                            <span class="article__add-text">Добавить:</span>
+                            <input class="article__add-inp" type="text" value="+0">
+                            <span class="article__add-pirce">140 <sup>руб.</sup></span>
+                            <div class="article__add-plus"></div>
+                            <select class="article__add-input" name="type">
+                                <option value="Китайский соус">Китайский соус</option>
+                                <option value="Японский соус">Японский соус</option>
+                                <option value="Французский соус">Французский соус</option>
+                                </select>
+                        </div>
+                        <div class="article__wrapper">
+                            <span class="article__price">1 550 <sup class="article__sup">руб</sup></span>
+                            <span class="article__count-car">
+                                <span class="article__btn article__minus"></span>
+                                1
+                                <span class="article__btn article__plus"></span>
+                            </span>
+                        </div>
+                        <a href="#" class="article__button">В корзину</a>
+                    </article>
+                    <article class="wok__article article  swiper-slide">
+                        <img src="./img/wok1.png" alt="С говядиной" class="article__img">
+                        <h3 class="article__logo">С говядиной</h3>
+                        <div class="article__info">
+                            <span class="article__weight no-bedire">400 г.</span>
+                            <span class="article__kkal">1350 kkal</span>
+                        </div>
+                        <div class="article__add">
+                            <span class="article__add-text">Добавить:</span>
+                            <input class="article__add-inp" type="text" value="+0">
+                            <span class="article__add-pirce">140 <sup>руб.</sup></span>
+                            <div class="article__add-plus"></div>
+                            <select class="article__add-input" name="type">
+                                <option value="Китайский соус">Китайский соус</option>
+                                <option value="Японский соус">Японский соус</option>
+                                <option value="Французский соус">Французский соус</option>
+                                </select>
+                        </div>
+                        <div class="article__wrapper">
+                            <span class="article__price">1 550 <sup class="article__sup">руб</sup></span>
+                            <span class="article__count-car">
+                                <span class="article__btn article__minus"></span>
+                                1
+                                <span class="article__btn article__plus"></span>
+                            </span>
+                        </div>
+                        <a href="#" class="article__button">В корзину</a>
+                    </article>
+                    <article class="wok__article article  swiper-slide">
+                        <img src="./img/wok1.png" alt="С говядиной" class="article__img">
+                        <h3 class="article__logo">С говядиной</h3>
+                        <div class="article__info">
+                            <span class="article__weight no-bedire">400 г.</span>
+                            <span class="article__kkal">1350 kkal</span>
+                        </div>
+                        <div class="article__add">
+                            <span class="article__add-text">Добавить:</span>
+                            <input class="article__add-inp" type="text" value="+0">
+                            <span class="article__add-pirce">140 <sup>руб.</sup></span>
+                            <div class="article__add-plus"></div>
+                            <select class="article__add-input" name="type">
+                                <option value="Китайский соус">Китайский соус</option>
+                                <option value="Японский соус">Японский соус</option>
+                                <option value="Французский соус">Французский соус</option>
+                                </select>
+                        </div>
+                        <div class="article__wrapper">
+                            <span class="article__price">1 550 <sup class="article__sup">руб</sup></span>
+                            <span class="article__count-car">
+                                <span class="article__btn article__minus"></span>
+                                1
+                                <span class="article__btn article__plus"></span>
+                            </span>
+                        </div>
+                        <a href="#" class="article__button">В корзину</a>
+                    </article>
+                    <article class="wok__article article  swiper-slide">
+                        <img src="./img/wok1.png" alt="С говядиной" class="article__img">
+                        <h3 class="article__logo">С говядиной</h3>
+                        <div class="article__info">
+                            <span class="article__weight no-bedire">400 г.</span>
+                            <span class="article__kkal">1350 kkal</span>
+                        </div>
+                        <div class="article__add">
+                            <span class="article__add-text">Добавить:</span>
+                            <input class="article__add-inp" type="text" value="+0">
+                            <span class="article__add-pirce">140 <sup>руб.</sup></span>
+                            <div class="article__add-plus"></div>
+                            <select class="article__add-input" name="type">
+                                <option value="Китайский соус">Китайский соус</option>
+                                <option value="Японский соус">Японский соус</option>
+                                <option value="Французский соус">Французский соус</option>
+                                </select>
+                        </div>
+                        <div class="article__wrapper">
+                            <span class="article__price">1 550 <sup class="article__sup">руб</sup></span>
+                            <span class="article__count-car">
+                                <span class="article__btn article__minus"></span>
+                                1
+                                <span class="article__btn article__plus"></span>
+                            </span>
+                        </div>
+                        <a href="#" class="article__button">В корзину</a>
+                    </article>
+                </div>
+                <div class="wok__pagination pagination">
+                    <div class="pagination__prew"></div>
+                    <div class="pagination__bulets">
+                        <span class="pagination__bulet"></span>
+                        <span class="pagination__bulet pagination__bulet--active"></span>
+                    </div>
+                    <div class="pagination__next"></div>
+                </div>  
+            </div>
+        </section>
+
+        <section class="stock">
+
+        </section>
+
+        
+    </main>
+    <foter class="footer" style="margin-bottom: 500px; display: block;">
+       
+    </foter>
+
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
