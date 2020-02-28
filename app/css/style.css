@@ -916,13 +916,17 @@ html {
     right: 8%;
     transform: rotate(180deg); } }
 
+.bg-color {
+  background: linear-gradient(to bottom, #ffffff 10%, #f9f9f9 50%, #ffffff 90%); }
+
+.stock,
 .wok,
 .pizza,
 .rolls,
 .sets {
   padding: 33px 0;
-  margin-bottom: 2px;
-  background: linear-gradient(to bottom, #ffffff 10%, #f9f9f9 50%, #ffffff 90%); }
+  margin-bottom: 2px; }
+  .stock__header,
   .wok__header,
   .pizza__header,
   .rolls__header,
@@ -935,6 +939,7 @@ html {
     color: #32505a;
     position: relative;
     margin: 0 auto 48px; }
+    .stock__header::after,
     .wok__header::after,
     .pizza__header::after,
     .rolls__header::after,
@@ -945,6 +950,7 @@ html {
       left: 22px;
       width: 74px;
       height: 27px; }
+    .stock__header::before,
     .wok__header::before,
     .pizza__header::before,
     .rolls__header::before,
@@ -955,6 +961,7 @@ html {
       right: 22px;
       width: 74px;
       height: 27px; }
+  .stock__wrapper,
   .wok__wrapper,
   .pizza__wrapper,
   .rolls__wrapper,
@@ -964,6 +971,7 @@ html {
     margin: 0 auto; }
 
 @media (min-width: 750px) {
+  .stock,
   .wok,
   .pizza,
   .rolls,
@@ -974,17 +982,14 @@ html {
     width: 750px;
     margin: 0 auto;
     overflow: hidden; }
-    .wok__continer,
-    .pizza__continer,
-    .rolls__continer,
-    .sets__continer {
-      position: relative; }
+    .stock__header,
     .wok__header,
     .pizza__header,
     .rolls__header,
     .sets__header {
       font-size: 44px;
       width: 320px; }
+      .stock__header::after,
       .wok__header::after,
       .pizza__header::after,
       .rolls__header::after,
@@ -995,6 +1000,7 @@ html {
         width: 84px;
         height: 31px;
         background-size: cover; }
+      .stock__header::before,
       .wok__header::before,
       .pizza__header::before,
       .rolls__header::before,
@@ -1005,13 +1011,17 @@ html {
         width: 84px;
         height: 31px;
         background-size: cover; }
+    .stock__continer,
     .wok__continer,
     .pizza__continer,
     .rolls__continer,
     .sets__continer {
-      width: 720px;
+      position: relative;
+      width: 712px;
+      padding: 0 4px;
       margin: 0 auto;
       box-sizing: border-box; }
+    .stock__pagination,
     .wok__pagination,
     .pizza__pagination,
     .rolls__pagination,
@@ -1021,6 +1031,7 @@ html {
       margin-left: 5px; } }
 
 @media (min-width: 1170px) {
+  .stock,
   .wok,
   .pizza,
   .rolls,
@@ -1030,6 +1041,7 @@ html {
     width: 1170px;
     margin: 0 auto;
     overflow: hidden; }
+    .stock__header,
     .wok__header,
     .pizza__header,
     .rolls__header,
@@ -1037,6 +1049,7 @@ html {
       font-size: 60px;
       width: 400px;
       margin: 0 auto 64px; }
+      .stock__header::after,
       .wok__header::after,
       .pizza__header::after,
       .rolls__header::after,
@@ -1045,6 +1058,7 @@ html {
         top: -5px;
         width: 110px;
         height: 40px; }
+      .stock__header::before,
       .wok__header::before,
       .pizza__header::before,
       .rolls__header::before,
@@ -1053,13 +1067,16 @@ html {
         top: -5px;
         width: 110px;
         height: 40px; }
+    .stock__continer,
     .wok__continer,
     .pizza__continer,
     .rolls__continer,
     .sets__continer {
-      width: 1170px;
+      width: 1162px;
+      padding: 0 4px;
       margin: 0 auto;
       box-sizing: border-box; }
+    .stock__wrapper,
     .wok__wrapper,
     .pizza__wrapper,
     .rolls__wrapper,
@@ -1302,6 +1319,9 @@ html {
     letter-spacing: -0.5px;
     border-radius: 3px;
     cursor: pointer; }
+  .article__img {
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 @media (min-width: 750px) {
   .article {
@@ -1411,7 +1431,8 @@ html {
 
 @media (min-width: 750px) {
   .wok {
-    padding-top: 52px !important; }
+    padding-top: 52px !important;
+    min-height: 660px; }
     .wok__header::after {
       left: -8px;
       top: -14px;
@@ -1424,7 +1445,58 @@ html {
       height: 37px; } }
 
 @media (min-width: 1170px) {
-  .wok__header::after {
-    left: 15px; }
-  .wok__header::before {
-    right: 10px; } }
+  .wok {
+    min-height: 700px; }
+    .wok__header::after {
+      left: 15px; }
+    .wok__header::before {
+      right: 10px; }
+    .wok__pagination {
+      bottom: -87px; } }
+
+.stock-bg {
+  height: auto;
+  width: 100%;
+  background: url(../img/stock-bg.png) center repeat; }
+
+.stock {
+  margin-top: 34px;
+  padding: 0;
+  min-height: 615px;
+  background: none; }
+  .stock__header {
+    opacity: 0;
+    margin: 0; }
+  .stock__head-new {
+    font-family: "OpenSans-Semibold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fd4f10;
+    display: inline-block;
+    margin: 39px 0 32px 10px; }
+  .stock__head-stock {
+    font-family: "OpenSans-Semibold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #999999;
+    margin: 0;
+    display: inline-block;
+    margin: 39px 0 32px 20%; }
+
+@media (min-width: 750px) {
+  .stock {
+    margin-top: 58px;
+    min-height: 694px; }
+    .stock__head-new {
+      font-size: 18px;
+      line-height: 28px;
+      margin: 61px 0 42px 24px; }
+    .stock__head-stock {
+      font-size: 18px;
+      line-height: 28px;
+      margin: 61px 0 42px 8%; } }
+
+@media (min-width: 1170px) {
+  .stock {
+    margin-top: 35px;
+    min-height: 740px; } }

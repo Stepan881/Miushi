@@ -1,11 +1,14 @@
+.bg-color {
+    background: $bg-block;
+}
+
+.stock,
 .wok,
 .pizza,
 .rolls,
 .sets {
     padding: 33px 0;
-    margin-bottom: 2px;
-    background: linear-gradient(to bottom, #ffffff 10%, #f9f9f9 50%, #ffffff 90%);
-    
+    margin-bottom: 2px;    
     &__header {
         font-family: "LemonTuesday", "Arial", sans-serif;
         font-size: 44px;
@@ -45,6 +48,7 @@
 }
 
 @media (min-width: $tablet-width) {
+    .stock,
     .wok,
     .pizza,
     .rolls,
@@ -55,10 +59,6 @@
         width: 750px;
         margin: 0 auto;
         overflow: hidden;
-
-        &__continer {
-            position: relative;
-        }
         
         &__header {
             font-size: 44px;
@@ -83,7 +83,9 @@
         }
 
         &__continer {
-            width: 720px;
+            position: relative;
+            width: 712px;
+            padding: 0 4px;
             margin: 0 auto;
             box-sizing: border-box;
         }
@@ -97,6 +99,7 @@
 }
 
 @media (min-width: $desktop-width) {
+    .stock,
     .wok,
     .pizza,
     .rolls,
@@ -129,7 +132,8 @@
 
 
         &__continer {
-            width: 1170px;
+            width: 1162px;
+            padding: 0 4px;            
             margin: 0 auto;
             box-sizing: border-box;
             

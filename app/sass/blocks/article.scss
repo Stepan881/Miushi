@@ -66,7 +66,7 @@
         align-items: center;
         transform: rotate(-45deg);
     }
-//      <span class="article__new">new</span>
+
     &__info {
         font-family: "OpenSans", "Arial", sans-serif;
         font-size: 12px;
@@ -290,6 +290,9 @@
         letter-spacing: -0.5px;
         border-radius: 3px;
         cursor: pointer; 
+    }
+    &__img {
+        object-fit: cover;
     }
 }
 

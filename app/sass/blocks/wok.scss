@@ -27,6 +27,7 @@
 @media (min-width: $tablet-width) {
     .wok {
         padding-top: 52px !important;
+        min-height: 660px;
 
         &__header {
             &::after {
@@ -48,6 +49,7 @@
 
 @media (min-width: $desktop-width) {
     .wok {
+        min-height: 700px;
         &__header {
             &::after {
                 left: 15px;
@@ -56,6 +58,10 @@
             &::before {
                 right: 10px;
             }
+        }
+
+        &__pagination {
+            bottom: -87px;
         }
     }
 }

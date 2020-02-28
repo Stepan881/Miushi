@@ -211,3 +211,36 @@ let swiperwok = new Swiper(pizzawok, {
     prevEl: '.pagination__prew',
   },
 });
+
+const stock = document.querySelector('.stock > .stock__continer');
+let swiperstock = new Swiper(stock, {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    el: '.pagination__bulets',
+    bulletClass: 'pagination__bulet',
+    bulletActiveClass: 'pagination__bulet--active',
+    clickable: true,
+    type: 'bullets',   
+  },
+  breakpoints: {
+    750: {
+      slidesPerView: 3,
+      loopedSlides: 3,
+    },
+    1170: {
+      slidesPerView: 4,
+      centeredSlides: false,
+    },
+    debugger: false
+  },
+  navigation: {
+    nextEl: '.pagination__next',
+    prevEl: '.pagination__prew',
+  },
+});
