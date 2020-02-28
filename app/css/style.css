@@ -1500,3 +1500,185 @@ html {
   .stock {
     margin-top: 35px;
     min-height: 740px; } }
+
+.priority__header {
+  font-family: "LemonTuesday", "Arial", sans-serif;
+  font-weight: 100;
+  font-size: 44px;
+  line-height: 50px;
+  width: 320px;
+  text-align: center;
+  color: #32505a;
+  position: relative;
+  margin: 60px auto 0; }
+
+.priority__container {
+  margin: 0 auto;
+  text-align: center; }
+
+.priority__list {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 64px 0 0;
+  padding: 0;
+  list-style-type: none; }
+  .priority__list--disable li:nth-child(n+4) {
+    display: none; }
+
+.priority__item {
+  margin-bottom: 70px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.priority__image {
+  -o-object-fit: contain;
+     object-fit: contain; }
+
+.priority__text {
+  margin: 23px auto 0;
+  text-align: center;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  width: 60%; }
+
+.priority__btn {
+  margin: 0 auto;
+  text-decoration: none;
+  font-family: "MyriadPro-Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #fd4f10;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #fd4f10;
+  border-radius: 5px;
+  width: 90%;
+  height: 39px;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 1.5px; }
+
+@media (min-width: 750px) {
+  .priority__header {
+    font-size: 48px;
+    width: 750px;
+    margin-top: 85px;
+    letter-spacing: -0.5px; }
+    .priority__header::after {
+      content: '';
+      background: url("../img/decoration-left.png") center no-repeat;
+      position: absolute;
+      left: 22px;
+      width: 101px;
+      height: 41px;
+      top: 2px;
+      background-size: contain !important; }
+    .priority__header::before {
+      content: '';
+      background: url("../img/decoration-right.png") center no-repeat;
+      position: absolute;
+      right: 9px;
+      width: 101px;
+      height: 41px;
+      top: 2px;
+      background-size: contain !important; }
+  .priority__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 87px 0 0; }
+  .priority__item {
+    width: 33%;
+    margin-bottom: 26px;
+    min-height: 185px;
+    justify-content: start; }
+  .priority__text {
+    width: 90%;
+    margin-top: auto;
+    min-height: 100px; }
+  .priority__btn {
+    display: none; } }
+
+@media (min-width: 1170px) {
+  .priority__header {
+    font-size: 60px;
+    width: 878px;
+    margin: 103px auto 10px; }
+    .priority__header::after {
+      left: 0;
+      top: -5px;
+      width: 110px;
+      height: 40px; }
+    .priority__header::before {
+      right: 0;
+      top: -5px;
+      width: 110px;
+      height: 40px; }
+  .priority__list {
+    margin: 75px 0 0;
+    width: 1180px; }
+  .priority__item {
+    width: 20%; }
+  .priority__btn {
+    display: none; } }
+
+.reviews__header {
+  font-family: "LemonTuesday", "Arial", sans-serif;
+  font-weight: 100;
+  font-size: 44px;
+  line-height: 50px;
+  width: 320px;
+  text-align: center;
+  color: #32505a;
+  position: relative;
+  margin: 60px auto 52px; }
+  .reviews__header::after {
+    content: '';
+    background: url("../img/decoration-left.png") center no-repeat;
+    position: absolute;
+    left: 5px;
+    width: 77px;
+    height: 28px;
+    top: 16px;
+    background-size: contain !important; }
+  .reviews__header::before {
+    content: '';
+    background: url("../img/decoration-right.png") center no-repeat;
+    position: absolute;
+    right: 6px;
+    width: 77px;
+    height: 28px;
+    top: 16px;
+    background-size: contain !important; }
+
+.reviews__wrapper {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column; }
+
+.reviews__review {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+
+.reviews__profil {
+  display: flex;
+  flex-direction: row; }
+
+.reviews__image {
+  width: 70px;
+  height: 70px;
+  margin: 20px 0 0 8px;
+  -o-object-fit: contain;
+     object-fit: contain; }
+
+.reviews__data {
+  width: 63%;
+  margin: 0 auto; }

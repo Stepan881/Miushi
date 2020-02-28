@@ -36,7 +36,7 @@
              <nav class="header__nav">
                  <ul class="header__list">
                     <li class="header__item"><a href="#" class="header__link">Меню</a></li>
-                    <li class="header__item"><a href="#" class="header__link">Акции и скидки</a></li>
+                    <li class="header__item"><a href="#stock" class="header__link">Акции и скидки</a></li>
                     <li class="header__item"><a href="#" class="header__link">Доставка и оплата</a></li>
                     <li class="header__item"><a href="#" class="header__link">Новости</a></li>
                     <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
@@ -536,7 +536,8 @@
         </div>
 
         <div class="stock-bg">
-            <section class="stock">
+
+            <section class="stock" id="stock">
                 <h2 class="stock__header visually-hidden">Акции</h2>
                 <span class="stock__head-new">Новинки</span>
                 <h3 class="stock__head-stock">Акции</h3>
@@ -633,13 +634,84 @@
             </section>
         </div>
 
-
         <section class="priority">
-
+            <div class="priority__container">
+                <h2 class="priority__header">10 причин купить у нас</h2>
+                <ul class="priority__list priority__list--disable">
+                    <li class="priority__item">
+                        <img src="./img/kitchen.png" alt="100% ручная работа" class="priority__image">
+                        <span class="priority__text">100% ручная работа</span>
+                    </li>
+                    <li class="priority__item">
+                        <img src="./img/rice.png" alt="рис" class="priority__image">
+                        <span class="priority__text">Мы используем только дорогой рис из Японии</span>
+                    </li>
+                    <li class="priority__item">
+                        <img src="./img/pizza.png" alt="пицца" class="priority__image">
+                        <span class="priority__text">Вся пицца готовится из итальянской муки и Итальянского соуса</span>
+                    </li>
+                    <li class="priority__item">
+                        <img src="./img/dish.png" alt="ингредиенты" class="priority__image">
+                        <span class="priority__text">100% свежие ингредиенты</span>
+                    </li>
+                    <li class="priority__item">
+                        <img src="./img/octopus.png" alt=">Больше начинки" class="priority__image">
+                        <span class="priority__text">Больше начинки, меньше риса!</span>
+                    </li>
+                    <li class="priority__item">
+                        <img src="./img/like.png" alt="контроль качества" class="priority__image">
+                        <span class="priority__text">Постоянный контроль качества на всех этапах</span>
+                    </li>
+                    <li class="priority__item">
+                        <img src="./img/money.png" alt="низкие цены" class="priority__image">
+                        <span class="priority__text">Самые низкие цены на рынке! (Нет ресторанной наценки)</span>
+                    </li>
+                    <li class="priority__item">
+                        <img src="./img/noun.png" alt="не заменяем авокадо" class="priority__image">
+                        <span class="priority__text">Мы не заменяем авокадо огурцом!</span>
+                    </li>
+                    <li class="priority__item">
+                        <img src="./img/fish.png" alt="охлажденная рыба" class="priority__image">
+                        <span class="priority__text">Только охлажденная рыба (никакой заморозки)</span>
+                    </li>
+                    <li class="priority__item">
+                        <img src="./img/feather.png" alt="не используем майонез" class="priority__image">
+                        <span class="priority__text">Мы не используем майонез!</span>
+                    </li>
+                </ul>
+                <a href="#" class="priority__btn">Показать все</a>
+            </div>
         </section>
 
         <section class="reviews">
-
+            <div class="reviews__container">
+                <h2 class="reviews__header">Отзывы</h2>
+                <div class="reviews__wrapper">
+                    <div class="reviews__review">
+                        <div class="reviews__profil">
+                            <img src="./img/image-profil.png" alt="Надежда Наширбанова" class="reviews__image">
+                            <div class="reviews__data">
+                                <h3 class="reviews__name">Надежда Наширбанова</h3>
+                                <time class="reviews__time" datetime="2017-06-05 09:58">5 авг 2017 в 9:58</time>
+                            </div>
+                        </div>
+                        <div class="reviews__content">
+                            <p class="reviews__content">
+                                Спасибо за быструю доставку! Отличный поздний ужин после рабочего дня )
+                            </p>
+                            <img src="./img/image-content.png" alt="Фото" class="reviews__content-image">
+                        </div>
+                        <div class="reviews__social">
+                            <div class="reviews__social-btns">
+                                <a href="#" class="reviews__social-btn">like</a>
+                                <a href="#" class="reviews__social-btn">mail</a>
+                                <a href="#" class="reviews__social-btn">share</a>
+                            </div>
+                            <a href="#" class="reviews__social-share">Поделится</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <foter class="footer" style="margin-bottom: 500px; display: block;">

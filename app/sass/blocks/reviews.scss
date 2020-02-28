@@ -1,0 +1,82 @@
+.reviews {
+
+
+    &__header {
+        font-family: "LemonTuesday", "Arial", sans-serif;
+        font-weight: 100;
+        font-size: 44px;
+        line-height: 50px;
+        width: 320px;
+        text-align: center;
+        color: $color-sets;
+        position: relative;
+        margin: 60px auto 52px;
+
+
+        &::after {
+            content: '';
+            background: url('../img/decoration-left.png') center no-repeat;
+            position: absolute;
+            left: 5px;
+            width: 77px;
+            height: 28px;              
+            top: 16px;
+            background-size: contain !important;
+        }
+
+        &::before {
+            content: '';
+            background: url('../img/decoration-right.png') center no-repeat;
+            position: absolute;
+            right: 6px;
+            width: 77px;
+            height: 28px;  
+            top: 16px;
+            background-size: contain !important;
+        }
+    }
+    &__wrapper {
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__review {
+        width: 100%;
+        border: 1px solid $review-border;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    &__profil {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__image {
+        width: 70px;
+        height: 70px;
+        margin: 20px 0 0 8px;
+        object-fit: contain;
+
+    }
+
+    &__data {
+        width: 63%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .reviews {
+        
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .reviews {
+    
+    }
+}

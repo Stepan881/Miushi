@@ -12,7 +12,6 @@
         align-items: center;
         width: 270px;
 
-
         &__prew {
             background: url('../img/arrow-r.png') center no-repeat;
             width: 27px;
@@ -53,8 +52,5 @@
 @media (min-width: $desktop-width) {
     .pagination {
         bottom: -55px;
-    
-
-        
     }
 }

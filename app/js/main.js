@@ -13,7 +13,20 @@ const headerImage = document.querySelector('.header__image');
 const headerTop = document.querySelector('.header__top');
 const headerBottom = document.querySelector('.header__bottom');
 const headerItemPopup = document.querySelectorAll('.header__item--popup');
+const priorityBtn = document.querySelector('.priority__btn');
+const priorityList = document.querySelector('.priority__list');
 
+priorityBtn.addEventListener('click', function(event) {
+  event.preventDefault();
+  priorityList.classList.toggle("priority__list--disable");
+
+  if (priorityList.classList[1] === undefined) {
+    priorityBtn.innerHTML = 'Скрыть все';
+  } else {
+    priorityBtn.innerHTML = 'Показать все';
+  }
+  
+});
 
 function add() {
   headerAddress.classList.add('header__address--active');
@@ -45,6 +58,9 @@ function remove() {
   headerTop.classList.remove('header__top--active');
   headerBottom.classList.remove('header__bottom--active');
   header.classList.remove('header--active');
+
+
+
   headerItemPopup.forEach(element => {
       
       element.style.display = "block";
@@ -55,10 +71,24 @@ btnOpen.addEventListener('click', add);
 
 btnClose.addEventListener('click', remove);
 
+let width = window.innerWidth;
+if (width > 749) {
+  priorityList.classList.remove("priority__list--disable");
+} else {
+  priorityList.classList.add("priority__list--disable");
+}
 
 window.addEventListener('resize', function(event){
-  let width = document.documentElement.clientWidth;
     remove();
+
+    let width = window.innerWidth;
+    if (width > 749) {
+      priorityList.classList.remove("priority__list--disable");
+    } else {
+      priorityList.classList.add("priority__list--disable");
+      priorityBtn.innerHTML = 'Показать все';
+    }
+
 });
 
 

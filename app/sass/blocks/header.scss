@@ -1,7 +1,6 @@
 .header {
     font-size: 14px;
     line-height: 24px;
-
     min-height: 56px;
     display: flex;
     flex-direction: row;
@@ -25,7 +24,6 @@
             display: flex;
             flex-direction: column;
             width: 100%; 
-            
             background-color: $bg-color;         
         }
     }
@@ -46,7 +44,6 @@
         width: 54px;
         height: 54px;
         display: block;
-    
     }
 
     &__btn-open {
@@ -86,7 +83,6 @@
         }
     }
 
-
     &__bottom {
         order: 2;
         align-self: center;
@@ -101,8 +97,7 @@
     &__address,
     &__mail,
     &__contact,
-    &__call
-     {
+    &__call {
         display: none;
 
         &--active {
@@ -168,6 +163,7 @@
         letter-spacing: -0.2px;
         color: $color;
         text-decoration: none;
+
         img {
             position: absolute;
             left: 31px;
@@ -187,7 +183,6 @@
         text-transform: uppercase;
         margin-left: 51px;
         padding: 5px 5%;
-        
     }
 
     &__list {
@@ -241,7 +236,6 @@
         padding: 0 1%;
 
         &__image {
-
             top: 17px;
             left: calc(50% - 67px);
         }
@@ -304,9 +298,6 @@
             width: 100%;
             position: relative;
             border-bottom: 2px solid $line-header;
-            
-
-            
 
             &::before {
                 position: absolute;
@@ -316,7 +307,6 @@
                 width: 1000px;
                 height: 2px;
                 background-color: $line-header;
-                
             }
 
             &::after {
@@ -327,8 +317,6 @@
                 width: 1000px;
                 height: 2px;
                 background-color: $line-header;
-                
-
             }
         }
 
@@ -338,9 +326,7 @@
             font-size: 14px;
             line-height: 20px;
             display: block;
-  
             margin-left: auto;
-            // letter-spacing: -0.2px; 
         }
 
         &__contact {
@@ -398,6 +384,7 @@
             color: $color;
             text-decoration: none;
             display: block;
+
             img {
                 position: absolute;
                 left: -19px;
@@ -412,6 +399,7 @@
             font-size: 14px;
             line-height: 20px;
             letter-spacing: -0.2px;
+
             img {
                 position: absolute;
                 left: -19px;
@@ -440,11 +428,8 @@
             display: flex;
             flex-direction: row;
             width: 100%;
-            //justify-content: space-around;
             z-index: 2;
-            
-
-
+ 
             li {   
                 height: 100%;  
                 display: block;
@@ -485,10 +470,12 @@
             li:nth-child(6) {
                 width: 135px;
                 margin-left: auto;
+
                 img {
                     left: 0;
                 }
             }
+
             li:nth-child(7) {
                 width: 150px;
                 margin-left: 7px;
@@ -513,10 +500,8 @@
 
                 img {
                     position: absolute;
-                    
                 }
             }
         }
-
     }
 }
