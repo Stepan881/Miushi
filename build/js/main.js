@@ -25,7 +25,6 @@ priorityBtn.addEventListener('click', function(event) {
   } else {
     priorityBtn.innerHTML = 'Показать все';
   }
-  
 });
 
 function add() {
@@ -40,7 +39,6 @@ function add() {
   headerTop.classList.add('header__top--active');
   headerBottom.classList.add('header__bottom--active');
   header.classList.add('header--active');
-
   headerItemPopup.forEach(element => {
       element.style.display = "none";
   });
@@ -58,39 +56,23 @@ function remove() {
   headerTop.classList.remove('header__top--active');
   headerBottom.classList.remove('header__bottom--active');
   header.classList.remove('header--active');
-
-
-
   headerItemPopup.forEach(element => {
       
       element.style.display = "block";
   });
 }
-
 btnOpen.addEventListener('click', add);
-
 btnClose.addEventListener('click', remove);
+
+remove();
 
 let width = window.innerWidth;
 if (width > 749) {
   priorityList.classList.remove("priority__list--disable");
 } else {
   priorityList.classList.add("priority__list--disable");
+  priorityBtn.innerHTML = 'Показать все';
 }
-
-window.addEventListener('resize', function(event){
-    remove();
-
-    let width = window.innerWidth;
-    if (width > 749) {
-      priorityList.classList.remove("priority__list--disable");
-    } else {
-      priorityList.classList.add("priority__list--disable");
-      priorityBtn.innerHTML = 'Показать все';
-    }
-
-});
-
 
 let swiperHeader = new Swiper('.banner', {
   spaceBetween: 30,
