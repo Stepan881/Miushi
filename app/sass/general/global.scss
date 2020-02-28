@@ -41,3 +41,9 @@ html {
 .mobile-dispay-none {
   display: none;
 }
+
+.no-bedire {
+  &::before{
+    display: none;
+  }
+}

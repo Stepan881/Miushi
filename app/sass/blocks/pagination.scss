@@ -1,0 +1,60 @@
+.pagination {
+    display: none;
+}
+
+@media (min-width: $tablet-width) {
+    .pagination {
+
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 270px;
+
+
+        &__prew {
+            background: url('../img/arrow-r.png') center no-repeat;
+            width: 27px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        &__next {
+            background: url('../img/arrow-r.png') center no-repeat;
+            width: 27px;
+            height: 20px;
+            transform: rotate(180deg);
+            cursor: pointer;
+        }
+
+        &__bulets {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        &__bulet {
+            display: block;
+            width: 8px;
+            height: 8px;
+            background-color: $sets-bullet;
+            border-radius: 50%;
+            margin: 10px;
+            cursor: pointer;
+
+            &--active {
+                background-color: $sets-bullet-active;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .pagination {
+        bottom: -55px;
+    
+
+        
+    }
+}

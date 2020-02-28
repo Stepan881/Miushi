@@ -65,8 +65,10 @@ gulp.task("del", function () {
       open: true,
       cors: true,
       ui: false,
-      tunnel: false
+      tunnel: false,
+
     });
+    
     gulp.watch("app/sass/**/*.{scss,sass}", gulp.series("css", "refresh"));
     gulp.watch("app/img/**/*", gulp.series("img", "refresh"));
     gulp.watch("app/*.html", gulp.series("html", "refresh"));

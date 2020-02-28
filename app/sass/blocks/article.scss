@@ -1,0 +1,331 @@
+.article {
+    min-height: 435px;
+    width: 226px;
+    margin: 0 auto;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    background: $bg-color;
+    box-shadow: 0 0 8px 0  #00000050;
+    position: relative;
+    overflow: hidden;
+
+    &__logo {        
+        text-align: center;
+        color: $color;
+        font-family: "OpenSans", "Arial", sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 14px auto;
+        margin-top: auto;
+    }
+
+    &__hit {
+        display: block;
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        background: url('../img/hit.png') center no-repeat;
+        width: 54px;
+        height: 54px;
+    }
+
+    &__veg {
+        display: block;
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        background: url('../img/veg.png') center no-repeat;
+        width: 54px;
+        height: 54px;
+    }
+
+    &__fire {
+        display: block;
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        background: url('../img/fire.png') center no-repeat;
+        width: 54px;
+        height: 54px;
+    } 
+
+    &__new {
+        display: flex;
+        justify-content: center;
+        font-family: "RobotoSlab-Bold", "Arial", sans-serif;
+        font-size: 16px;
+        line-height: 14px;
+        color: $new-color;
+        position: absolute;
+        background: $new-bg-color;
+        width: 100px;
+        height: 30px;
+        top: 10px;
+        left: -26px;
+        align-items: center;
+        transform: rotate(-45deg);
+    }
+//      <span class="article__new">new</span>
+    &__info {
+        font-family: "OpenSans", "Arial", sans-serif;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: lighter;
+    }
+
+    &__weight {
+        margin: 0 10px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 12px;
+            left: -6px;
+            top: 6px;
+            background-color: $color;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 12px;
+            right: -6px;
+            top: 6px;
+            background-color: $color;
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 190px;
+        margin: 20px auto 0;
+    }
+
+    &__price {
+        font-family: "RobotoSlab-Bold", "Arial", sans-serif;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: bold;
+        padding-left: 5px;
+    }
+
+    &__count-car {
+        font-family: "MyriadPro-Regular", "Arial", sans-serif;
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: 200;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-width: 62px;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        display: block;
+        width: 11px;
+        height: 11px;
+        border: 1px solid $color;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__minus::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 5px;
+        background-color: $color;
+        top: 50%;
+        left: calc(50% - 3px);
+    }
+
+    &__plus {
+        
+        &::before {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 5px;
+            background-color: $color;
+            top: 47%;
+            left: calc(49% - 2px);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 5px;
+            width: 1px;
+            background-color: $color;
+            top: calc(50% - 2px);
+            left: 49%;
+        }
+    }
+
+    &__button {
+        display: flex;
+        text-decoration: none;
+        width: 193px;
+        height: 41px;
+        margin: 23px auto 0;
+        text-transform: uppercase;
+        background-color: $article-btn-bg-color;
+        align-items: center;
+        font-family: "OpenSans", "Arial", sans-serif;
+        font-size: 14px;
+        line-height: 28px;
+        color: $article-btn-color;
+        border-radius: 5px;
+        padding-left: 32px;
+        box-sizing: border-box;
+        letter-spacing: 0.6px;
+        position: relative;
+        margin-bottom: 28px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            background: url('../img/online-shopping-cart-white.png') center no-repeat;
+            width: 22px;
+            height: 20px;
+            right: 29px;
+        }
+    }
+
+    &__add {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 86%;
+        margin: 0 auto;
+    }
+
+    &__add-text {
+        font-family: "OpenSans", "Arial", sans-serif;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 28px;
+        margin-right: 8px;
+        align-self: center;
+    }
+
+    &__add-inp {
+        display: block;
+        width: 40px;
+        height: 20px;
+        border: none;
+        font-size: 12px;
+        line-height: 28px;
+        background: $bg-input;
+        padding-right: 20px;
+        box-sizing: border-box;
+        position: relative;
+        align-self: center;
+        border-radius: 3px;
+    }
+
+    &__add-pirce {
+        align-self: center;
+        margin: 0 auto;
+        font-family: "OpenSans", "Arial", sans-serif;
+        font-weight: 100;
+        font-size: 12px;
+        line-height: 28px;
+    }
+
+    &__add-plus {
+        align-self: center;
+        width: 19px;
+        height: 19px;
+        background: $bg-plus;
+        border-radius: 3px;
+        position: relative;
+        margin-left: 10px;
+        cursor: pointer;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 9px;
+            height: 1px;
+            background-color: $bg-color;
+            left: 5px;
+            top: 9px;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 9px;
+            background-color: $bg-color;
+            left: 9px;
+            top: 5px;
+        }
+    }
+
+    &__add-input {
+        background: $bg-input;
+        border: none;
+        width: 100%;
+        height: 25px;
+        margin-top: 12px;
+        font-family: "OpenSans", "Arial", sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 28px;
+        padding: 0 9px;
+        letter-spacing: -0.5px;
+        border-radius: 3px;
+        cursor: pointer; 
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: $tablet-width) {
+    .article {
+        width: 220px;
+    
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .article {
+        min-height: 460px;
+        width: 264px;
+
+        &__img {
+            height: 227px;
+            object-fit: cover;
+        }
+
+        &__logo {
+
+            font-size: 20px;
+            line-height: 24px;
+            margin: 22px auto 16px;
+        }
+
+
+
+
+
+    }
+}

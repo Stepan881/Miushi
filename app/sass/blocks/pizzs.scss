@@ -1,0 +1,43 @@
+.pizza {
+    &__header {
+        &::after {
+            left: 6px;
+            width: 74px;
+            height: 27px;
+        }
+
+        &::before {
+            right: 6px;
+            width: 74px;
+            height: 27px;
+        }
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .pizza {
+        padding-top: 29px !important;
+
+        &__header {
+            &::after {
+                left: -14px;
+                top: -1px;
+                width: 84px;
+                height: 32px;
+            }
+    
+            &::before {
+                right: -27px;
+                top: -1px;
+                width: 84px;
+                height: 32px;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .pizza {
+        padding-top: 42px!important;
+    }
+}

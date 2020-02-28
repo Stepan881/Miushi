@@ -1,0 +1,61 @@
+.wok {
+
+    &__header {
+        &::after {
+            left: 6px;
+            top: -12px;
+            width: 88px;
+            height: 33px;
+            background-size: cover;
+        }
+
+        &::before {
+            right: 6px;
+            top: -12px;
+            width: 88px;
+            height: 33px;
+            background-size: cover;
+        }
+    }
+
+    &__article {
+        min-height: 510px;
+    }
+
+}
+
+@media (min-width: $tablet-width) {
+    .wok {
+        padding-top: 52px !important;
+
+        &__header {
+            &::after {
+                left: -8px;
+                top: -14px;
+                width: 100px;
+                height: 37px;
+            }
+    
+            &::before {
+                right: -27px;
+                top: -14px;
+                width: 100px;
+                height: 37px;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .wok {
+        &__header {
+            &::after {
+                left: 15px;
+            }
+    
+            &::before {
+                right: 10px;
+            }
+        }
+    }
+}

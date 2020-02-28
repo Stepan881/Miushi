@@ -31,7 +31,6 @@ function add() {
   headerItemPopup.forEach(element => {
       element.style.display = "none";
   });
-  btnOpen.removeEventListener();
 }
 
 function remove() {
@@ -50,7 +49,6 @@ function remove() {
       
       element.style.display = "block";
   });
-  btnClose.removeEventListener();
 }
 
 btnOpen.addEventListener('click', add);
@@ -60,16 +58,11 @@ btnClose.addEventListener('click', remove);
 
 window.addEventListener('resize', function(event){
   let width = document.documentElement.clientWidth;
-  if (width >= 1170) {
     remove();
-  } else {
-    remove();
-  }
-
 });
 
 
-let swiper = new Swiper('.banner', {
+let swiperHeader = new Swiper('.banner', {
   spaceBetween: 30,
   centeredSlides: true,
   loop: true,
@@ -87,5 +80,134 @@ let swiper = new Swiper('.banner', {
   navigation: {
     nextEl: '.banner__next',
     prevEl: '.banner__prev',
+  },
+});
+
+const setsSwiper = document.querySelector('.sets > .sets__continer');
+let swiperSets = new Swiper(setsSwiper, {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 4000,
+  },
+  pagination: {
+    el: '.pagination__bulets',
+    bulletClass: 'pagination__bulet',
+    bulletActiveClass: 'pagination__bulet--active',
+    clickable: true,
+    type: 'bullets',   
+  },
+  breakpoints: {
+    750: {
+      slidesPerView: 3,
+      loopedSlides: 3,
+    },
+    1170: {
+      slidesPerView: 4,
+      centeredSlides: false,
+    },
+    debugger: false
+  },
+  navigation: {
+    nextEl: '.pagination__next',
+    prevEl: '.pagination__prew',
+  },
+});
+
+const RollSwiper = document.querySelector('.rolls > .rolls__continer');
+let swiperRoll = new Swiper(RollSwiper, {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  pagination: {
+    el: '.pagination__bulets',
+    bulletClass: 'pagination__bulet',
+    bulletActiveClass: 'pagination__bulet--active',
+    clickable: true,
+    type: 'bullets',   
+  },
+  breakpoints: {
+    750: {
+      slidesPerView: 3,
+      loopedSlides: 3,
+    },
+    1170: {
+      slidesPerView: 4,
+      centeredSlides: false,
+    },
+    debugger: false
+  },
+  navigation: {
+    nextEl: '.pagination__next',
+    prevEl: '.pagination__prew',
+  },
+});
+
+const pizzaSwiper = document.querySelector('.pizza > .pizza__continer');
+let swiperpizza = new Swiper(pizzaSwiper, {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+  },
+  pagination: {
+    el: '.pagination__bulets',
+    bulletClass: 'pagination__bulet',
+    bulletActiveClass: 'pagination__bulet--active',
+    clickable: true,
+    type: 'bullets',   
+  },
+  breakpoints: {
+    750: {
+      slidesPerView: 3,
+      loopedSlides: 3,
+    },
+    1170: {
+      slidesPerView: 4,
+      centeredSlides: false,
+    },
+    debugger: false
+  },
+  navigation: {
+    nextEl: '.pagination__next',
+    prevEl: '.pagination__prew',
+  },
+});
+
+const pizzawok = document.querySelector('.wok > .wok__continer');
+let swiperwok = new Swiper(pizzawok, {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  pagination: {
+    el: '.pagination__bulets',
+    bulletClass: 'pagination__bulet',
+    bulletActiveClass: 'pagination__bulet--active',
+    clickable: true,
+    type: 'bullets',   
+  },
+  breakpoints: {
+    750: {
+      slidesPerView: 3,
+      loopedSlides: 3,
+    },
+    1170: {
+      slidesPerView: 4,
+      centeredSlides: false,
+    },
+    debugger: false
+  },
+  navigation: {
+    nextEl: '.pagination__next',
+    prevEl: '.pagination__prew',
   },
 });
