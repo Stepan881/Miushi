@@ -71,6 +71,11 @@
         text-align: center;
         align-items: center;
         letter-spacing: 1.5px;
+        transition: 0.3s;
+        &:hover {
+            opacity: 0.5;
+            transition: 0.3s;
+        }
     }
 }
 

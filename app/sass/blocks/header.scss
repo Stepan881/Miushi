@@ -154,6 +154,14 @@
             bottom: 7px;
         }
     }
+    &__tel,
+    &__mail {
+        transition: 0.3s;
+        &:hover {
+            opacity: 0.5;
+            transition: 0.3s;
+        }
+    }
 
     &__mail--active {
         padding: 9px 51px 0;

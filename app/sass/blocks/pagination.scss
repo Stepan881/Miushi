@@ -17,6 +17,12 @@
             width: 27px;
             height: 20px;
             cursor: pointer;
+
+            transition: 0.3s;
+            &:hover {
+                opacity: 0.5;
+                transition: 0.3s;
+            }
         }
 
         &__next {
@@ -25,6 +31,11 @@
             height: 20px;
             transform: rotate(180deg);
             cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                opacity: 0.5;
+                transition: 0.3s;
+            }
         }
 
         &__bulets {
@@ -41,7 +52,11 @@
             border-radius: 50%;
             margin: 10px;
             cursor: pointer;
-
+            transition: 0.3s;
+            &:hover {
+                opacity: 0.5;
+                transition: 0.3s;
+            }
             &--active {
                 background-color: $sets-bullet-active;
             }

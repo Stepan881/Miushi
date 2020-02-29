@@ -65,6 +65,11 @@
         color: $reply-btn-text;
         border-radius: 5px;
         cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            opacity: 0.5;
+            transition: 0.3s;
+        }
     }
 
     &__info{
