@@ -16,7 +16,21 @@ const priorityBtn = document.querySelector('.priority__btn');
 const priorityList = document.querySelector('.priority__list');
 const aboutBtn = document.querySelector('.about__btn');
 const mobileText = document.querySelectorAll('.mobile-text');
+const footerList = document.querySelector('.footer__list');
 
+const footerItem = document.querySelectorAll('.footer__item');
+
+let width = window.innerWidth;
+
+
+footerList.addEventListener('click', function(event) {
+    if ((event.target.classList[0] === 'footer__link') && (width < 1169)) {
+      event.preventDefault();
+       event.path[1].classList.toggle("footer__item--avtive");
+    } else if (event.target.classList[0] === 'footer__link'){
+      event.preventDefault();
+    }
+});
 
 
 aboutBtn.addEventListener('click', function(event) {
@@ -24,11 +38,16 @@ aboutBtn.addEventListener('click', function(event) {
   mobileText.forEach(function(item, i) {
     mobileText[i].classList.toggle("dispalay-none");
   });
-
+  
   if (mobileText[1].classList[2] === undefined) {
-    aboutBtn.innerHTML = 'Скрыть';
+    aboutBtn.innerHTML = 'Скрыть';    
   } else {
     aboutBtn.innerHTML = 'Показать ещё';
+
+    document.querySelector('#about').scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
   }
 });
 
@@ -40,6 +59,10 @@ priorityBtn.addEventListener('click', function(event) {
     priorityBtn.innerHTML = 'Скрыть все';
   } else {
     priorityBtn.innerHTML = 'Показать все';
+    document.querySelector('#priority').scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
   }
 });
 
@@ -82,9 +105,10 @@ btnClose.addEventListener('click', remove);
 
 remove();
 
-let width = window.innerWidth;
+
 if (width > 749) {
   priorityList.classList.remove("priority__list--disable");
+  window.location.hash = 'about';
 } else {
   priorityList.classList.add("priority__list--disable");
   priorityBtn.innerHTML = 'Показать все';

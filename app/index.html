@@ -25,7 +25,7 @@
                 <img src="./img/envelope.png" alt="78003332222@yandex.ru" class="header__mail-ico">
             </a>
             <div class="header__contact">
-                <a class="header__tel" href="tel:+7 (800) 333 2 222">+7 (800) 333 2 222</a>
+                <a class="header__tel" href="tel:+78003332222">+7 (800) 333 2 222</a>
                 <span class="header__schedule">Работаем с 11.00 до 23.00</span> 
             </div>
             <a href="#" class="header__call">Обратный звонок</a>
@@ -642,7 +642,7 @@
                         <img src="./img/kitchen.png" alt="100% ручная работа" class="priority__image">
                         <span class="priority__text">100% ручная работа</span>
                     </li>
-                    <li class="priority__item">
+                    <li class="priority__item"  id="priority">
                         <img src="./img/rice.png" alt="рис" class="priority__image">
                         <span class="priority__text">Мы используем только дорогой рис из Японии</span>
                     </li>
@@ -776,7 +776,7 @@
                         <source media="(min-width: 1150px)" srcset="./img/about-img-desctop.png">
                         <img src="./img/about-img-tablet.png" alt="О компании" class="about__image no-mobile">
                     </picture>
-                    <p class="about__p">Суши МИЮШИ открылись в октябре 2012г. и уже завоевали успех у тех, кто ценит японскую кухню и качественное приготовление блюд.</p>
+                    <p class="about__p" id="about">Суши МИЮШИ открылись в октябре 2012г. и уже завоевали успех у тех, кто ценит японскую кухню и качественное приготовление блюд.</p>
                     <p class="about__p">С 2013 года мы осуществляем не только доставку на дом, теперь для вас открыт наш уютный небольшой зал. Придя сюда, вы сможете плотно пообедать, насладиться прекрасными напитками, посидеть с друзьями или обзавестись новыми знакомствами.</p>
                     <p class="about__p">Открывая зал, Мы преследовали цель предоставить своим посетителям максимум удобства и комфорта, поэтому, придя сюда в первый раз, вы почувствуете себя как рыба в воде, окунувшись в домашнюю и теплую обстановку!</p>
                     <p class="about__p mobile-text dispalay-none">Особое внимание мы уделяем организации доставки суши и других блюд, которая осуществляется только по г. Курске. Четкая и слаженная работа курьеров позволяет максимально сократить время от приготовления блюда до его попадания на стол заказчику. Как правило, оно составляет от 20 до 60 минут в зависимости от местонахождения клиента. Операторы службы доставки всегда осведомлены обо всех изменениях времени доставки и предупреждают клиентов заранее, а при возможных серьезных задержках в связи с дорожной ситуацией предложат Вам альтернативу. Мы беремся только за ту работу, которую можем выполнить в срок.</p>
@@ -790,7 +790,163 @@
     </main>
     <footer class="footer">
        <div class="footer__container">
-           
+           <div class="footer__top">
+                <ul class="footer__list">
+
+                    <li class="footer__item footer__item--avtive"><a href="#" class="footer__link">Меню</a>
+                        <ul class="footer__list-first"> 
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Суши</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Гунканы</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Инари</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Супы</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Салаты</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Горячие закуски</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Десерты</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Напитки </a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Дополительно</a>
+                            </li>
+                        </ul>
+                    </li> 
+
+                    <li class="footer__item"><a href="#" class="footer__link">Сеты</a>
+                        <ul class="footer__list-first"> 
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">До 500 руб.</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">До 1000 руб. (для двоих)</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">До 1500 руб (для двоих - троих)</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">До 2000 руб (большая кампания)</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">от 2000 руб (очень большая кампания)</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__list-first"> 
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">С угрем</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Горячие</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Запеченые</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Суши</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__item"><a href="#" class="footer__link">Роллы</a>
+                        <ul class="footer__list-first"> 
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Традиционные/Классические</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Простые</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Теплые</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Запеченые</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Вегитарианские</a>
+                            </li>
+                        </ul>
+                    </li> 
+
+                    <li class="footer__item"><a href="#" class="footer__link">Вок</a>
+                        <ul class="footer__list-first"> 
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Яичная </a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Удон</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Гречневая </a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Стеклянная</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Рис</a>
+                            </li>
+                        </ul>
+                    </li> 
+
+                    <li class="footer__item"><a href="#" class="footer__link">Пицца</a>
+                        <ul class="footer__list-first"> 
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Мясная</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Рыбная</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Сырная</a>
+                            </li>
+                            <li class="footer__item-first">
+                                <a href="#" class="footer__link-first">Вегитарианская</a>
+                            </li>
+                        </ul>
+                    </li> 
+                    
+                </ul>
+           </div>
+           <div class="footer__bottom">
+                <span class="footer__copyright">МИЮШИ © 2017</span>
+                <a href="#" class="footer__agreement">Соглашение на обработку персональных данных</a>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a href="https://www.facebook.com/" class="footer__social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+                              <image id="Слой_2" data-name="Слой 2" width="24" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA21BMVEX////0zs711dX44uL87+/88/P88/Pyycrzzc756Oj//v766en0zs766en00tP11NX+/f3009P++fn++/v+/v7++Pj9+Pj++fn77Oz+/v799/j0z9D+/f399/f+/f3++fr66uv+/Pz+/f3+/P3++/z11dX78PH+/f3++vr//f3++/v55eX99/f++fn55eX88vL99/f++vr89PT77/D+/P3+/Pz++/v++/z++/z0zc776+v77Oz++/v10tP++/311NX66Oj44+P87+/87+/54+P11NX//////v4AAAARUVndAAAARnRSTlMACEqu4+3vCyHL/tAE0TNQ/i/vaRWu5YzaKM0g/dD79Nb8MP1ZWtM4+P37wNTwweza9/HXOP1PT0kQ2NtENk9UzbLl5rNNrs6CIgAAAAFiS0dESPAC1OoAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkAh0PFxCK2vzZAAABJ0lEQVQoz3WTa1eDMAyGwzZhlg2Y1ymoQ8XLVNB538TNW/v//5EFShq67f2UN89pT9ImACir1e5s2J12y4FldTcZV2Ju14A9lzfU71HqMW6IeZr6NB8wUQZ+TQcabm1Lv7NbxgNVsUC6V2X2SyOs0gz14YMKH1ZuWMShplHhj45PIuVDaUcax9KekjJHAA6xZxKf0/YcSHRL8YXEl1fXY6w1gRvEt/gOd3UqhQzxPeKHOpXBZMXpuE5NwEYs2KNET+MgwpRNLuf8WeIXWnkGKXFF368Up6SxCr9RnDSeZQm/A0zX42nzS0xcfAnM1uGZMQ5NrMYBPIo/EOfmKBb4s6ZzPaq5GuQoCFTEciCyFryhhWXsSehihaIfrtgyx//6tu2f3z+ygv+Mq5fPY4dhhQAAAABJRU5ErkJggg=="/>
+                              </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://www.instagram.com/" class="footer__social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+                                <image id="Слой_1" data-name="Слой 1" width="24" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABI1BMVEX////88/P//v799/f55OT339/++/v55OX89PT+/Pz//Pv+/P3//fz9+Pj+/P1yU9j+/Pz//f3//f3++Pj88/P88vL+6+j8+fv00NH00NH55OT03N/11NX77u766+v99/bonJ3qo6TqpKXpn6DrqKjvurvutbb88/P33d7tqKf99fX//v7xwcLvubn11dX03uLrqKn0z8/78vLyxsf89PTWkKbsq6zxwcL99fXuo57rqaronJ366en10tL55ebxwcH55ubsrq/109P55OTonJ3poKHsq6zpoaL77e3w4/D44uLutrb22Nj22dn77e388/P99vf77u/439/++vr++/v46+78+Pv88vL++fn++Pj439/77+/////99/f+/Pz++fkAAAC6DnseAAAAXHRSTlMA3v7sBxL4aeL7+/387/wH+vz98trVtvhstK0X7Luq6g5DSxtktqPZ9WLm/cuz7ftn5dLW/it5zP41aAT76frI+oTq+AwXdyb9uvio7/D8/v7ADPX5u/bX9PMwv8dQLh0AAAABYktHRGDFt3wQAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH5AIdDxkwLzfxnwAAARxJREFUKM9902dbgzAUBeDTqCjuUvfWap11Vq171K2tex/1//8LG0ggBsv5dLnvA7kEAoRJCfoRdfWw0+DQiGj8q0204prazHgibSETvJVM8LYaynapHeqi003LeF6mq1u1eqrca0/S1z8AoZuD6k0jHqq2h4PuCEaT2NWPCXhsfCKLyakcpvXwNDg7Q37NymrO4nks5LEoqyUsr2DVYg9cQ0FW3+sb4domb6Lol1vb3Inzzy72ZLWPg//uPuQRjsnSySkNFppL5Jkc+vzC5EuDeZW/vvG74bZAc5mVW1ndVYoF3OtNhWN/Epnwk+BBLfPoPOlkVOvZ3MBYXoIneYk/Uy2PJkknKvBq45t1it5NFB+xU4ZPNYJIRUfwFyr6zFJcXbemAAAAAElFTkSuQmCC"/>
+                                </svg>
+                                
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://vk.com/" class="footer__social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+                                <image id="Слой_1" data-name="Слой 1" width="24" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAclBMVEX////6+Pj+/v78+/v39/f+/v78+/v8/Pz39/f8/Pz6+fn//v7+/v7+/v7////+///+/f3+///+///////+/f7+/v7+///+/v7+/v/+/v7+/v7+/v7+/v7+/f7+/v7+/v7+/f3+/f78+/v4+Pj///8AAADfzX3sAAAAJHRSTlMAdvrLHv7C3CzFfv779EJCz2o+Ps++Ze9Cav2Q+OT55Ozsw3by5nx1AAAAAWJLR0QlwwHJDwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+QCHQ8cD+QmKOcAAAD/SURBVDjLlVPtdsIgDL1+oLayIKBz081tmvd/xlFoS0TbbvcHB5Kbm5wkAD1mc24xn+ERC77DonAvFRdQS+lf8ROssn/NT7EejRcaGx7EJhLUMEE1/opHUAUCjwKoxWurVJmvhmZ+IUO75qXRKVprDSVT0mntMMak4pzHPpma4wDvowS1BOOcI84EhndJimCTgMNWEnZ49ZRy2cgzOLIkcAihY1fMWxB653vCCc4iFI4QTJDd6W5NlMQDgQsC9Xadmxrhz4qEhhatzuIiSy2Hde7tOUsxbvXxeYqXy9f3z6Ud9+TCTK8crkP+61/XfmAvq/98venP2+DWd13fsvUX0V5eM1ZXk3wAAAAASUVORK5CYII="/>
+                                </svg>
+                                
+                        </a>
+                    </li>
+                </ul>
+           </div>
        </div>
     </footer>
 
