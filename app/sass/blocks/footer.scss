@@ -1,0 +1,18 @@
+.footer {
+    min-height: 715px;
+    width: 100%;
+    background: $footer-bg;
+}
+
+@media (min-width: $tablet-width) {
+    .footer {
+
+    }
+}
+
+
+@media (min-width: $desktop-width) {
+    .footer {
+
+    }
+}

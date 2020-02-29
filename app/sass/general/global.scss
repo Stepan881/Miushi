@@ -47,8 +47,26 @@ html {
     display: none;
   }
 }
-@media (min-width: $tablet-width) {
-  .mobile {
+
+.no-mobile {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+      display: flex;
+  }
+}
+
+
+.mobile {
+  @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.dispaly-flex {
+  display: flex;
+}
+
+.dispalay-none {
+  display: none;
 }

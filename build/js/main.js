@@ -2,7 +2,6 @@
 
 const btnOpen = document.querySelector('.header__btn-open');
 const btnClose = document.querySelector('.header__btn-close');
-
 const header = document.querySelector('.header');
 const headerAddress = document.querySelector('.header__address');
 const headerMail = document.querySelector('.header__mail');
@@ -15,6 +14,23 @@ const headerBottom = document.querySelector('.header__bottom');
 const headerItemPopup = document.querySelectorAll('.header__item--popup');
 const priorityBtn = document.querySelector('.priority__btn');
 const priorityList = document.querySelector('.priority__list');
+const aboutBtn = document.querySelector('.about__btn');
+const mobileText = document.querySelectorAll('.mobile-text');
+
+
+
+aboutBtn.addEventListener('click', function(event) {
+  event.preventDefault();
+  mobileText.forEach(function(item, i) {
+    mobileText[i].classList.toggle("dispalay-none");
+  });
+
+  if (mobileText[1].classList[2] === undefined) {
+    aboutBtn.innerHTML = 'Скрыть';
+  } else {
+    aboutBtn.innerHTML = 'Показать ещё';
+  }
+});
 
 priorityBtn.addEventListener('click', function(event) {
   event.preventDefault();
