@@ -5,12 +5,13 @@
 @media (min-width: $tablet-width) {
     .pagination {
 
-        position: absolute;
+        // position: absolute;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        width: 270px;
+        margin: 40px auto 0;
+        
 
         &__prew {
             background: url('../img/arrow-r.png') center no-repeat;
@@ -41,7 +42,7 @@
         &__bulets {
             display: flex;
             flex-direction: row;
-
+            margin: 0 30px;
         }
 
         &__bulet {

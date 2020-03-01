@@ -1,17 +1,12 @@
 .footer {
-    min-height: 715px;
+    min-height: 560px;
     width: 100%;
     background: $footer-bg;
-
-    &__container {
-        
-    }
 
     &__list {
         list-style: none;
         margin: 0;
         padding: 0;
-
     }
 
     &__item {
@@ -117,7 +112,6 @@
         &:hover {
             color: $footer-color;
         }
-
     }
 
 
@@ -139,6 +133,7 @@
         padding-left: 13px;
         display: block;
     }
+
     &__agreement {
         order: 2;
         transition: 0.3s;
@@ -175,6 +170,8 @@
 
 @media (min-width: $tablet-width) {
     .footer {
+        min-height: auto;
+
         &__link {
             padding: 0 3%;
         }
@@ -212,9 +209,6 @@
             padding: 0 0 0 2%;
             width: auto;
         }
-
-
-
     }
 }
 
@@ -315,6 +309,7 @@
                         }
                     }
                 }
+
                 &:nth-child(4) {
                     width: 170px;
                     display: flex;
@@ -334,6 +329,7 @@
                         }
                     }
                 }
+
                 &:nth-child(5) {
                     width: 113px;
                     display: flex;
@@ -363,7 +359,6 @@
                display: none;
             }
             
-
             ul {
                 height: 100%;
                 width: auto;
@@ -402,6 +397,5 @@
         &__social-list {
             margin-left: auto;
         }
-
     }
 }

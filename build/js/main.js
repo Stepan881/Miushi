@@ -17,10 +17,27 @@ const priorityList = document.querySelector('.priority__list');
 const aboutBtn = document.querySelector('.about__btn');
 const mobileText = document.querySelectorAll('.mobile-text');
 const footerList = document.querySelector('.footer__list');
-
 const footerItem = document.querySelectorAll('.footer__item');
-
 let width = window.innerWidth;
+const articleWrapper = document.querySelectorAll('.article__wrapper');
+
+articleWrapper.forEach(function(i) {
+     
+    i.addEventListener('click', function(event) {
+      console.log('i: ', i);
+      const num = i.querySelector('.article__count-num');
+
+      if (event.target.classList[1] === 'article__minus' && num.outerText > 1) {
+      num.innerHTML = Number(num.innerHTML) - 1;
+      
+    } else if (event.target.classList[1] === 'article__plus') {
+      num.innerHTML = Number(num.innerHTML) + 1;
+    }
+
+  });
+});
+
+
 
 
 footerList.addEventListener('click', function(event) {
@@ -139,11 +156,6 @@ const setsSwiper = document.querySelector('.sets > .sets__continer');
 let swiperSets = new Swiper(setsSwiper, {
   slidesPerView: 'auto',
   spaceBetween: 30,
-  centeredSlides: true,
-  loop: true,
-  autoplay: {
-    delay: 4000,
-  },
   pagination: {
     el: '.pagination__bulets',
     bulletClass: 'pagination__bulet',
@@ -152,7 +164,13 @@ let swiperSets = new Swiper(setsSwiper, {
     type: 'bullets',   
   },
   breakpoints: {
+    0: {
+      centeredSlides: true,
+      loop: true,
+    },
     750: {
+      centeredSlides: false,
+      loop: false,
       slidesPerView: 3,
       loopedSlides: 3,
     },
@@ -172,11 +190,6 @@ const RollSwiper = document.querySelector('.rolls > .rolls__continer');
 let swiperRoll = new Swiper(RollSwiper, {
   slidesPerView: 'auto',
   spaceBetween: 30,
-  centeredSlides: true,
-  loop: true,
-  autoplay: {
-    delay: 3000,
-  },
   pagination: {
     el: '.pagination__bulets',
     bulletClass: 'pagination__bulet',
@@ -185,7 +198,13 @@ let swiperRoll = new Swiper(RollSwiper, {
     type: 'bullets',   
   },
   breakpoints: {
+    0: {
+      centeredSlides: true,
+      loop: true,
+    },
     750: {
+      centeredSlides: false,
+      loop: false,
       slidesPerView: 3,
       loopedSlides: 3,
     },
@@ -205,11 +224,6 @@ const pizzaSwiper = document.querySelector('.pizza > .pizza__continer');
 let swiperpizza = new Swiper(pizzaSwiper, {
   slidesPerView: 'auto',
   spaceBetween: 30,
-  centeredSlides: true,
-  loop: true,
-  autoplay: {
-    delay: 2000,
-  },
   pagination: {
     el: '.pagination__bulets',
     bulletClass: 'pagination__bulet',
@@ -218,7 +232,13 @@ let swiperpizza = new Swiper(pizzaSwiper, {
     type: 'bullets',   
   },
   breakpoints: {
+    0: {
+      centeredSlides: true,
+      loop: true,
+    },
     750: {
+      centeredSlides: false,
+      loop: false,
       slidesPerView: 3,
       loopedSlides: 3,
     },
@@ -238,8 +258,6 @@ const pizzawok = document.querySelector('.wok > .wok__continer');
 let swiperwok = new Swiper(pizzawok, {
   slidesPerView: 'auto',
   spaceBetween: 30,
-  centeredSlides: true,
-  loop: true,
   pagination: {
     el: '.pagination__bulets',
     bulletClass: 'pagination__bulet',
@@ -248,7 +266,13 @@ let swiperwok = new Swiper(pizzawok, {
     type: 'bullets',   
   },
   breakpoints: {
+    0: {
+      centeredSlides: true,
+      loop: true,
+    },
     750: {
+      centeredSlides: false,
+      loop: false,
       slidesPerView: 3,
       loopedSlides: 3,
     },
@@ -268,11 +292,6 @@ const stock = document.querySelector('.stock > .stock__continer');
 let swiperstock = new Swiper(stock, {
   slidesPerView: 'auto',
   spaceBetween: 30,
-  centeredSlides: true,
-  loop: true,
-  autoplay: {
-    delay: 5000,
-  },
   pagination: {
     el: '.pagination__bulets',
     bulletClass: 'pagination__bulet',
@@ -281,7 +300,13 @@ let swiperstock = new Swiper(stock, {
     type: 'bullets',   
   },
   breakpoints: {
+    0: {
+      centeredSlides: true,
+      loop: true,
+    },
     750: {
+      centeredSlides: false,
+      loop: false,
       slidesPerView: 3,
       loopedSlides: 3,
     },
