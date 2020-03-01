@@ -155,7 +155,7 @@ let swiperHeader = new Swiper('.banner', {
 const setsSwiper = document.querySelector('.sets > .sets__continer');
 let swiperSets = new Swiper(setsSwiper, {
   slidesPerView: 'auto',
-  spaceBetween: 30,
+  spaceBetween: 30,    
   pagination: {
     el: '.pagination__bulets',
     bulletClass: 'pagination__bulet',
@@ -163,14 +163,15 @@ let swiperSets = new Swiper(setsSwiper, {
     clickable: true,
     type: 'bullets',   
   },
+    
+  loop: false,
   breakpoints: {
     0: {
+      initialSlide : 1,
       centeredSlides: true,
-      loop: true,
     },
     750: {
       centeredSlides: false,
-      loop: false,
       slidesPerView: 3,
       loopedSlides: 3,
     },
@@ -197,14 +198,14 @@ let swiperRoll = new Swiper(RollSwiper, {
     clickable: true,
     type: 'bullets',   
   },
+  loop: false,
   breakpoints: {
     0: {
+      initialSlide : 1,
       centeredSlides: true,
-      loop: true,
     },
     750: {
       centeredSlides: false,
-      loop: false,
       slidesPerView: 3,
       loopedSlides: 3,
     },
@@ -231,14 +232,14 @@ let swiperpizza = new Swiper(pizzaSwiper, {
     clickable: true,
     type: 'bullets',   
   },
+  loop: false,
   breakpoints: {
     0: {
+      initialSlide : 1,
       centeredSlides: true,
-      loop: true,
     },
     750: {
       centeredSlides: false,
-      loop: false,
       slidesPerView: 3,
       loopedSlides: 3,
     },
@@ -265,14 +266,14 @@ let swiperwok = new Swiper(pizzawok, {
     clickable: true,
     type: 'bullets',   
   },
+  loop: false,
   breakpoints: {
     0: {
+      initialSlide : 1,
       centeredSlides: true,
-      loop: true,
     },
     750: {
       centeredSlides: false,
-      loop: false,
       slidesPerView: 3,
       loopedSlides: 3,
     },
@@ -299,14 +300,14 @@ let swiperstock = new Swiper(stock, {
     clickable: true,
     type: 'bullets',   
   },
+  loop: false,
   breakpoints: {
     0: {
+      initialSlide : 1,
       centeredSlides: true,
-      loop: true,
     },
     750: {
       centeredSlides: false,
-      loop: false,
       slidesPerView: 3,
       loopedSlides: 3,
     },
