@@ -21,6 +21,7 @@ const footerItem = document.querySelectorAll('.footer__item');
 let width = window.innerWidth;
 const articleWrapper = document.querySelectorAll('.article__wrapper');
 
+
 articleWrapper.forEach(function(i) {
      
     i.addEventListener('click', function(event) {
@@ -55,7 +56,6 @@ aboutBtn.addEventListener('click', function(event) {
   mobileText.forEach(function(item, i) {
     mobileText[i].classList.toggle("dispalay-none");
   });
-  
   if (mobileText[1].classList[2] === undefined) {
     aboutBtn.innerHTML = 'Скрыть';    
   } else {
@@ -125,7 +125,6 @@ remove();
 
 if (width > 749) {
   priorityList.classList.remove("priority__list--disable");
-  window.location.hash = 'about';
 } else {
   priorityList.classList.add("priority__list--disable");
   priorityBtn.innerHTML = 'Показать все';
