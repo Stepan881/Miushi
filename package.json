@@ -23,5 +23,10 @@
     "start": "gulp start"
   },
   "author": "Stepan881",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ]
 }
