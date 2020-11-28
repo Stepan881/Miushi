@@ -42,7 +42,7 @@ articleWrapper.forEach(function(i) {
 
 
 footerList.addEventListener('click', function(event) {
-    if ((event.target.classList[0] === 'footer__link') && (width < 1169)) {
+    if ((event.target.classList[0] === 'footer__link') && (width > 1169)) {
       event.preventDefault();
        event.path[1].classList.toggle("footer__item--avtive");
     } else if (event.target.classList[0] === 'footer__link'){
@@ -125,6 +125,7 @@ remove();
 
 if (width > 749) {
   priorityList.classList.remove("priority__list--disable");
+  priorityBtn.innerHTML = 'Скрыть все';
 } else {
   priorityList.classList.add("priority__list--disable");
   priorityBtn.innerHTML = 'Показать все';
@@ -166,7 +167,8 @@ let swiperSets = new Swiper(setsSwiper, {
   loop: false,
   breakpoints: {
     0: {
-      initialSlide : 1,
+      slidesPerView: 'auto',
+      initialSlide : 2,
       centeredSlides: true,
     },
     750: {
@@ -200,7 +202,8 @@ let swiperRoll = new Swiper(RollSwiper, {
   loop: false,
   breakpoints: {
     0: {
-      initialSlide : 1,
+      slidesPerView: 'auto',
+      initialSlide : 2,
       centeredSlides: true,
     },
     750: {
@@ -234,7 +237,8 @@ let swiperpizza = new Swiper(pizzaSwiper, {
   loop: false,
   breakpoints: {
     0: {
-      initialSlide : 1,
+      slidesPerView: 'auto',
+      initialSlide : 2,
       centeredSlides: true,
     },
     750: {
@@ -268,7 +272,8 @@ let swiperwok = new Swiper(pizzawok, {
   loop: false,
   breakpoints: {
     0: {
-      initialSlide : 1,
+      slidesPerView: 'auto',
+      initialSlide : 2,
       centeredSlides: true,
     },
     750: {
@@ -302,7 +307,8 @@ let swiperstock = new Swiper(stock, {
   loop: false,
   breakpoints: {
     0: {
-      initialSlide : 1,
+      slidesPerView: 'auto',
+      initialSlide : 2,
       centeredSlides: true,
     },
     750: {
