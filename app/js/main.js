@@ -42,11 +42,9 @@ articleWrapper.forEach(function(i) {
 
 
 footerList.addEventListener('click', function(event) {
-    if ((event.target.classList[0] === 'footer__link') && (width > 1169)) {
+    if ((event.target.classList[0] === 'footer__link')) {
       event.preventDefault();
        event.path[1].classList.toggle("footer__item--avtive");
-    } else if (event.target.classList[0] === 'footer__link'){
-      event.preventDefault();
     }
 });
 
